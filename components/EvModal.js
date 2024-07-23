@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import evStationImg from "../public/images/ev-charging-station.png";
+import evStationImg from "../public/images/ev-charging-station.svg";
 import crossIcon from "../public/images/cross_icon.png";
 
 const EvModal = ({ isOpen, onChange }) => {

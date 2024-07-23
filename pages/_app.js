@@ -37,10 +37,10 @@ export default function App({ Component, pageProps }) {
 
   useEffect(() => {
     // Check local storage to see if the modal has been shown before
-    const hasSeenEVModal = localStorage.getItem("hasSeenEVModal");
+    const hasSeenEVModal = sessionStorage.getItem("hasSeenEVModal");
     if (!hasSeenEVModal) {
       setIsEVModalOpen(true);
-      localStorage.setItem("hasSeenEVModal", "true");
+      sessionStorage.setItem("hasSeenEVModal", "true");
     }
   }, []);
 
