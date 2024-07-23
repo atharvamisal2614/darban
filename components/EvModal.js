@@ -23,12 +23,13 @@ const EvModal = ({ isOpen, onChange }) => {
       >
         <div className="absolute top-3 right-3">
           <Image
-            className="cursor-pointer"
+            className="cursor-pointer "
             onClick={onChange}
             width={24}
             height={24}
             alt="Close"
             src={crossIcon}
+            priority
           />
         </div>
         <div className="flex flex-col justify-center items-center">
@@ -39,6 +40,7 @@ const EvModal = ({ isOpen, onChange }) => {
               height={250}
               src={evStationImg}
               alt="EV Charging Station"
+              priority
             />
           </div>
           <div className="text-center pb-4 ">
