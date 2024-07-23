@@ -40,7 +40,6 @@ export default function App({ Component, pageProps }) {
 
   useEffect(() => {
     const currentPath = router.pathname;
-    console.log("my route", currentPath);
     // Check local storage to see if the modal has been shown before
     const hasSeenEVModal = sessionStorage.getItem("hasSeenEVModal");
     if (!hasSeenEVModal && currentPath === "/") {
