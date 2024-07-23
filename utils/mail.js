@@ -6,7 +6,7 @@ const transporter = createTransport({
   secure: true,
   auth: {
     user: "reservations@bluwaterresort.in",
-    pass: "Reservations@2024",
+    pass: "RAVISIRblu@123",
   },
 });
 
