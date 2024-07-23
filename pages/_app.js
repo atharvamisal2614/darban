@@ -12,8 +12,11 @@ import Footer from "@/sections/Footer";
 import Image from "next/image";
 import Chatbot from "@/components/Chatbot";
 import EvModal from "@/components/EvModal";
+import { useRouter } from "next/router";
 
 export default function App({ Component, pageProps }) {
+  const router = useRouter();
+
   const [isEVModalOpen, setIsEVModalOpen] = useState(false);
 
   axios.interceptors.request.use(
@@ -36,9 +39,11 @@ export default function App({ Component, pageProps }) {
   }, []);
 
   useEffect(() => {
+    const currentPath = router.pathname;
+    console.log("my route", currentPath);
     // Check local storage to see if the modal has been shown before
     const hasSeenEVModal = sessionStorage.getItem("hasSeenEVModal");
-    if (!hasSeenEVModal) {
+    if (!hasSeenEVModal && currentPath === "/") {
       setIsEVModalOpen(true);
       sessionStorage.setItem("hasSeenEVModal", "true");
     }
