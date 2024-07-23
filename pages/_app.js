@@ -7,12 +7,15 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "react-toastify/dist/ReactToastify.css";
 import NextNProgress from "nextjs-progressbar";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Footer from "@/sections/Footer";
 import Image from "next/image";
 import Chatbot from "@/components/Chatbot";
+import EvModal from "@/components/EvModal";
 
 export default function App({ Component, pageProps }) {
+  const [isEVModalOpen, setIsEVModalOpen] = useState(false);
+
   axios.interceptors.request.use(
     (config) => {
       const token = localStorage.getItem("token");
@@ -31,6 +34,19 @@ export default function App({ Component, pageProps }) {
       duration: 500,
     });
   }, []);
+
+  useEffect(() => {
+    // Check local storage to see if the modal has been shown before
+    const hasSeenEVModal = localStorage.getItem("hasSeenEVModal");
+    if (!hasSeenEVModal) {
+      setIsEVModalOpen(true);
+      localStorage.setItem("hasSeenEVModal", "true");
+    }
+  }, []);
+
+  const handleModalVisibility = () => {
+    setIsEVModalOpen(false);
+  };
 
   return (
     <>
@@ -61,6 +77,7 @@ export default function App({ Component, pageProps }) {
         </a>
       </div>
       <Footer />
+      <EvModal isOpen={isEVModalOpen} onChange={handleModalVisibility} />
     </>
   );
 }
