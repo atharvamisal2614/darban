@@ -46,7 +46,7 @@ export default function App({ Component, pageProps }) {
       setIsEVModalOpen(true);
       sessionStorage.setItem("hasSeenEVModal", "true");
     }
-  }, []);
+  }, [router]);
 
   const handleModalVisibility = () => {
     setIsEVModalOpen(false);

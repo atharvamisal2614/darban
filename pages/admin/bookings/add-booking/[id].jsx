@@ -101,8 +101,18 @@ const Booking = ({ room }) => {
       };
 
       const order = await axios.post(url, data);
-      console.log(order);
       toast.success("Booking Successfull User will receive email shortly");
+
+      try {
+        await axios.post("/api/send-email", {
+          ...data,
+          _id: order.data.booking._id,
+        });
+        console.log("Email sent successfully.");
+      } catch (emailError) {
+        console.error("Error sending email:", emailError);
+        toast.error("Booking successful, but failed to send email.");
+      }
 
       setTimeout(() => {
         router.push(`/admin/bookings/${order.data.booking._id}`);

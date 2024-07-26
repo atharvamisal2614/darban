@@ -117,9 +117,18 @@ const handler = async (req, res) => {
         }
       });
 
-      await sendMail(booking);
+      // Send confirmation email
+      try {
+        await axios.post("/api/send-email", {
+          ...booking,
+          _id: booking._id,
+        });
+        console.log("Email sent successfully.");
+      } catch (emailError) {
+        console.error("Error sending email:", emailError);
+      }
 
-      return res.status(200).json({ message: "Booking Successfull", booking });
+      return res.status(200).json({ message: "Booking Successful", booking });
     } catch (error) {
       console.log(error);
       return res.status(400).json({ message: "Unknown error occured" });

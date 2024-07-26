@@ -55,4 +55,4 @@ const EvModal = ({ isOpen, onChange }) => {
   );
 };
 
-export default EvModal;
+export default React.memo(EvModal);

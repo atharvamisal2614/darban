@@ -5,16 +5,16 @@ const transporter = createTransport({
   port: 465,
   secure: true,
   auth: {
-    user: "reservations@bluwaterresort.in",
-    pass: "RAVISIRblu@123",
+    user: process.env.MAIL_USER_ID,
+    pass: process.env.MAIL_PASSWORD,
   },
 });
 
 export const sendMail = async (booking) => {
   const mailOptions = {
-    from: "reservations@bluwaterresort.in", // sender address
+    from: process.env.MAIL_USER_ID, // sender address
     to: booking.email,
-    cc: "admin@bluwaterresort.in",
+    cc: process.env.ADMIN_USER_ID,
     subject: ` Your Booking Confirmation - Booking ID: ${booking._id}`, // Subject line
     html: `<p> Dear Customer,</p>
 <p>Greetings from Blu Water Resort Malshej !!</p> 
@@ -80,3 +80,5 @@ marketing.bluewaterresort@gmail.com
   const info = await transporter.sendMail(mailOptions);
   console.log(info);
 };
+
+

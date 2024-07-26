@@ -110,7 +110,7 @@ const Booking = ({ room }) => {
       const order = await axios.post(url, data);
 
       setOrderData(order.data);
-      console.log(order.data);
+      console.log("booking from the client side", JSON.stringify(order.data));
     } catch (error) {
       console.log(error);
       toast.error("Unknown Error Occured");
