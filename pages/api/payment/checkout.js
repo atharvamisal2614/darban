@@ -147,7 +147,7 @@ const handler = async (req, res) => {
         dates: dates,
         coupon: couponObj?.code ?? "",
       });
-      console.log(booking);
+      console.log("FROM-CHECKOUT", booking);
       return res.status(200).json({
         mid: mid,
         data: fdata,

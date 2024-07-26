@@ -79,10 +79,10 @@ const handler = async (req, res) => {
       }
       txnhash = txnhash >>> 0;
       let txndata = req.body;
-      console.log(txndata.ap_SecureHash);
-      console.log(txnhash);
+      console.log("txndata.ap_SecureHash", txndata.ap_SecureHash);
+      console.log("txnhash", txnhash);
 
-      console.log(txndata.CUSTOMVAR);
+      console.log("txndata.CUSTOMVAR", txndata.CUSTOMVAR);
 
       let booking = await Booking.findOneAndUpdate(
         { orderId: txndata.CUSTOMVAR },
