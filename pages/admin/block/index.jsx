@@ -137,19 +137,23 @@ export default Bookings;
 export async function getServerSideProps(context) {
   var bookings;
   try {
-    await dbConnect();
-    const bookingsData = await Booking.find({ fname: "block" })
-      .populate({
-        path: "room",
-        model: Room,
-      })
-      .sort({ _id: -1 })
-      .limit(300);
+        await dbConnect();
+        const bookingsData = await Booking.find({ fname: "block" })
+          .populate({
+            path: "room",
+            model: Room,
+          })
+          .sort({ _id: -1 })
+          .limit(300);
 
-    console.log(bookingsData);
+        // console.log(
+        //   "blocked rooms",
+        //   JSON.stringify(bookingsData),
+        //   bookingsData.length
+        // );
 
-    bookings = JSON.parse(JSON.stringify(bookingsData));
-  } catch (error) {
+        bookings = JSON.parse(JSON.stringify(bookingsData));
+      } catch (error) {
     console.log(error);
     bookings = null;
   }

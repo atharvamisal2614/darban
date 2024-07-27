@@ -49,7 +49,7 @@ const Booking = ({ room }) => {
 
   const checkAvailability = async () => {
     try {
-      const url = `${BASE_URL}/api/room/checkavailability`;
+      const url = `${BASE_URL}/api/room/updated-checkavailability`;
       const dates = getDatesInRange(
         state[0].startDate.toString(),
         state[0].endDate.toString()
@@ -62,7 +62,7 @@ const Booking = ({ room }) => {
         dates: dates,
       };
       const res = await axios.post(url, data);
-      // console.log(res.data);
+      console.log("admin-book room", res.data);
       setRoomAvailability(res.data.roomAvailability);
 
       setPage(1);

@@ -8,6 +8,9 @@ const handler = async (req, res) => {
   if (req.method == "POST") {
     const { dates, room } = req.body;
 
+
+    console.log("availability", dates, room);
+
     const admin = verifyAdmin(req);
 
     if (!admin) {

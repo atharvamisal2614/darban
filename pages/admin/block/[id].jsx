@@ -48,7 +48,7 @@ const Booking = ({ room }) => {
 
   const checkAvailability = async () => {
     try {
-      const url = `${BASE_URL}/api/room/checkavailability`;
+      const url = `${BASE_URL}/api/room/updated-checkavailability`;
       const dates = getDatesInRange(
         state[0].startDate.toString(),
         state[0].endDate.toString()
@@ -103,7 +103,7 @@ const Booking = ({ room }) => {
       console.log(order);
       toast.success("Room Blocked Successfully");
     } catch (error) {
-      console.log(error);
+      console.log("error", error);
       toast.error("Unknown Error Occured");
     }
   };

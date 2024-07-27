@@ -7,6 +7,8 @@ const handler = async (req, res) => {
   if (req.method == "POST") {
     const { checkIn, checkOut, room, reqRooms, dates } = req.body;
 
+console.log(checkIn, checkOut, room, reqRooms, dates);
+
     try {
       // const dates = getDatesInRange(checkIn, checkOut);
       dates.pop();

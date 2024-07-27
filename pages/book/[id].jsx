@@ -65,7 +65,7 @@ const Booking = ({ room }) => {
       );
 
       console.log(dates);
-      const url = `${BASE_URL}/api/room/checkavailability`;
+      const url = `${BASE_URL}/api/room/updated-checkavailability`;
       const data = {
         checkIn: state[0].startDate.toString(),
         checkOut: state[0].endDate.toString(),

@@ -1,7 +1,7 @@
 import mongoose from 'mongoose'
 
 // const MONGO_URL = "mongodb://localhost:27017/pp"
-const MONGO_URL = process.env.MONGO_URI
+const MONGO_URL = process.env.MONGO_TEST_URI;
 
 if (!MONGO_URL) {
   throw new Error(
