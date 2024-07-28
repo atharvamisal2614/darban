@@ -8,9 +8,6 @@ const handler = async (req, res) => {
   if (req.method == "POST") {
     const { dates, room } = req.body;
 
-
-    console.log("availability", dates, room);
-
     const admin = verifyAdmin(req);
 
     if (!admin) {
@@ -26,9 +23,11 @@ const handler = async (req, res) => {
         date: { $in: dates },
       });
 
-      return res
-        .status(200)
-        .json({ message: "Room Available", roomAvailability });
+      console.log("availability", roomAvailability);
+      return res.status(200).json({
+        message: "Room Available",
+        roomAvailability,
+      });
     } catch (error) {
       console.log(error);
       return res.status(500).json({ message: "Unkown Error Occured" });

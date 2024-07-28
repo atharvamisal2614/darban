@@ -2,21 +2,9 @@ import dbConnect from "@/middleware/mongo";
 import Room from "@/models/Room";
 import Availability from "@/models/Availability";
 import Booking from "@/models/Booking";
-import { getDatesInRange, getDatesInRangeBackend } from "@/helpers/dateOps";
 import { verifyAdmin } from "@/middleware/verifyToken";
-import { createTransport } from "nodemailer";
 import { calculateTotalAmount } from "@/helpers/calculateAmount";
 import { Coupon } from "@/models/Coupon";
-
-// const transporter = createTransport({
-//   host: "smtp.zoho.in",
-//   port: 465,
-//   secure: true,
-//   auth: {
-//     user: "reservations@bluwaterresort.in",
-//     pass: "Qxqe8u#t",
-//   },
-// });
 
 const handler = async (req, res) => {
   if (req.method == "POST") {
@@ -47,7 +35,6 @@ const handler = async (req, res) => {
     try {
       await dbConnect();
 
-      // const dates = getDatesInRange(checkIn, checkOut);
       dates.pop();
 
       const roomAvailability = await Availability.find({
@@ -116,9 +103,6 @@ const handler = async (req, res) => {
         coupon: couponObj?.code ?? "",
       });
 
-      console.log("New Booking", booking);
-      console.log("DatesInRange", dates);
-
       dates.forEach(async (date) => {
         try {
           const availablilty = await Availability.findOne({
@@ -143,18 +127,6 @@ const handler = async (req, res) => {
           console.log(error);
         }
       });
-
-      // const mailOptions = {
-      //   from: "reservations@bluwaterresort.in", // sender address
-      //   to: booking.email,
-      //   cc: "admin@bluwaterresort.in",
-      //   subject: "Booking Successfull", // Subject line
-      //   html: `<p>Booking Id: ${booking._id}</p><p>Check your booking here: https://bluwaterresort.in/booking/${booking._id}</p>`, // plain text body
-      // };
-
-      // console.log(mailOptions);
-
-      // const info = await transporter.sendMail(mailOptions);
 
       return res.status(200).json({
         booking: booking,
