@@ -1,4 +1,5 @@
 import AdminLayout from "@/components/AdminLayout";
+import PasswordModal from "@/components/PasswordModal";
 import { getIndianDate } from "@/helpers/dateOps";
 import dbConnect from "@/middleware/mongo";
 import Booking from "@/models/Booking";
@@ -13,7 +14,7 @@ const Bookings = ({ bookings }) => {
   const [bid, setBid] = useState("");
   const [name, setName] = useState("");
   const [bookingsList, setBookingsList] = useState(bookings);
-
+  const [isPasswordModalOpen, setIsPasswordModalOpen] = useState(null);
   const [isClient, setIsClient] = useState(false);
 
   const today = new Date(Date.now()).toISOString();
@@ -31,6 +32,7 @@ const Bookings = ({ bookings }) => {
       const url = `${BASE_URL}/api/bookings/${bid}`;
       await axios.delete(url);
 
+      setIsPasswordModalOpen(false);
       //   getBookingsByName();
       toast.success("Block Removed Successfully");
       setTimeout(() => {
@@ -62,6 +64,14 @@ const Bookings = ({ bookings }) => {
   useEffect(() => {
     setIsClient(true);
   }, []);
+
+  const handlePasswordMgmt = () => {
+    if (isPasswordModalOpen !== null) {
+      deleteBookingByBid(isPasswordModalOpen);
+    } else {
+      toast.error("Something went wrong");
+    }
+  };
 
   if (isClient)
     return (
@@ -116,7 +126,7 @@ const Bookings = ({ bookings }) => {
                         <td className="p-3">{booking?.room.title}</td>
 
                         <td
-                          onClick={() => deleteBookingByBid(booking?._id)}
+                          onClick={() => setIsPasswordModalOpen(booking?._id)}
                           className="p-3 text-red-400 cursor-pointer font-semibold"
                         >
                           Delete
@@ -127,6 +137,11 @@ const Bookings = ({ bookings }) => {
               </table>
             </div>
           </div>
+          <PasswordModal
+            onSubmit={handlePasswordMgmt}
+            handleClick={() => setIsPasswordModalOpen(null)}
+            isOpen={isPasswordModalOpen}
+          />
         </AdminLayout>
       </>
     );

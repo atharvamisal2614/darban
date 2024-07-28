@@ -18,7 +18,7 @@ const EvModal = ({ isOpen, onChange }) => {
       onClick={handleBackdropClick}
     >
       <div
-        data-aos="zoom-in-right"
+        data-aos="zoom-in"
         className="relative bg-sky-50 rounded-3xl shadow-lg max-w-lg mx-4 sm:mx-8 md:mx-auto p-4 sm:p-8 border-4 border-transparent"
       >
         <div className="absolute top-3 right-3">
