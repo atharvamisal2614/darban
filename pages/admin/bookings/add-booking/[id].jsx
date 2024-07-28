@@ -62,22 +62,39 @@ const Booking = ({ room }) => {
         dates: dates,
       };
       const res = await axios.post(url, data);
-      console.log("admin-book room", res.data);
-      setRoomAvailability(res.data.roomAvailability);
 
-      setPage(1);
+      if (res.status === 200) {
+        setRoomAvailability(res.data.roomAvailability);
+        setPage(1);
+        return true;
+      } else if (res.status === 404) {
+        toast.error("Rooms are not available for the selected dates.");
+        setRoomAvailability([]);
+        return false;
+      } else {
+        toast.error("Unexpected response from server.");
+        setRoomAvailability([]);
+        return false;
+      }
     } catch (error) {
       console.log(error);
       if (error?.response?.data?.message) {
-        toast.error(error?.response?.data?.message);
+        toast.error(error.response.data.message);
       } else {
-        toast.error("Unknown Error Occured");
+        toast.error("Unknown Error Occurred");
       }
+      return false; // Error occurred
     }
   };
 
   const checkout = async () => {
     try {
+      const isAvailable = await checkAvailability();
+
+      if (!isAvailable) {
+        return; // Exit if rooms are not available
+      }
+
       const url = `${BASE_URL}/api/admin-booking`;
       const dates = getDatesInRange(
         state[0].startDate.toString(),

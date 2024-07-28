@@ -61,11 +61,13 @@ const Booking = ({ room }) => {
         dates: dates,
       };
       const res = await axios.post(url, data);
-      checkout();
-      // console.log(res.data);
-      //   setRoomAvailability(res.data.roomAvailability);
-
-      setPage(1);
+     if (res.status === 200) {
+       await checkout();
+     } else if (res.status === 404) {
+       toast.error("Rooms are not available for the selected dates.");
+     } else {
+       toast.error("Unexpected response from server.");
+     }
     } catch (error) {
       console.log(error);
       if (error?.response?.data?.message) {
