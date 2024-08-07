@@ -11,63 +11,59 @@ import React, { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 
 const Bookings = ({ bookings }) => {
-  const [bid, setBid] = useState("");
-  const [name, setName] = useState("");
   const [bookingsList, setBookingsList] = useState(bookings);
   const [isPasswordModalOpen, setIsPasswordModalOpen] = useState(null);
   const [isClient, setIsClient] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const today = new Date(Date.now()).toISOString();
-  console.log(today);
 
   const deleteBookingByBid = async (bid) => {
-    // const pass = prompt("Enter Password to delete booking");
-
-    // if (pass !== "blu@2023#sevenstar") {
-    //   toast.error("Incorrect Password");
-    //   return;
-    // }
-
+    setIsLoading(true);
     try {
       const url = `${BASE_URL}/api/bookings/${bid}`;
-      await axios.delete(url);
+      const response = await axios.delete(url);
 
-      setIsPasswordModalOpen(false);
-      //   getBookingsByName();
-      toast.success("Block Removed Successfully");
-      setTimeout(() => {
-        window.location.reload();
-      }, 2000);
+      if (response.status === 200) {
+        toast.success("Booking Deleted Successfully");
+        setIsPasswordModalOpen(null);
+        setTimeout(() => {
+          window.location.reload();
+        }, 2000);
+      } else {
+        toast.error(`Failed to delete the booking: ${response.statusText}`);
+      }
     } catch (error) {
-      console.log(error);
-      toast.error("Failed To delete the Bookings");
+      if (error.response) {
+        // Request made and server responded
+        console.log(error.response.data);
+        console.log(error.response.status);
+        console.log(error.response.headers);
+        toast.error(
+          `Failed to delete the booking: ${error.response.data.message}`
+        );
+      } else if (error.request) {
+        // Request made but no response received
+        console.log(error.request);
+        toast.error("No response received from the server");
+      } else {
+        // Something happened in setting up the request
+        console.log("Error", error.message);
+        toast.error("An error occurred while deleting the booking");
+      }
+    } finally {
+      setIsLoading(false);
     }
   };
-
-  //   const getBookingsByName = async (e) => {
-  //     e?.preventDefault();
-  //     try {
-  //       const url = `${BASE_URL}/api/bookings`;
-  //       const res = await axios.get(url, {
-  //         params: {
-  //           name: name,
-  //         },
-  //       });
-  //       console.log(res.data);
-  //       setBookingsList(res.data.bookings);
-  //     } catch (error) {
-  //       console.log(error);
-  //       toast.error("Failed To fetch the Bookings");
-  //     }
-  //   };
 
   useEffect(() => {
     setIsClient(true);
   }, []);
 
-  const handlePasswordMgmt = () => {
+  const handlePasswordMgmt = async () => {
     if (isPasswordModalOpen !== null) {
-      deleteBookingByBid(isPasswordModalOpen);
+      setIsLoading(true);
+      await deleteBookingByBid(isPasswordModalOpen);
     } else {
       toast.error("Something went wrong");
     }
@@ -126,7 +122,9 @@ const Bookings = ({ bookings }) => {
                         <td className="p-3">{booking?.room.title}</td>
 
                         <td
-                          onClick={() => setIsPasswordModalOpen(booking?._id)}
+                          onClick={() =>
+                            booking?._id && setIsPasswordModalOpen(booking?._id)
+                          }
                           className="p-3 text-red-400 cursor-pointer font-semibold"
                         >
                           Delete
@@ -138,7 +136,8 @@ const Bookings = ({ bookings }) => {
             </div>
           </div>
           <PasswordModal
-            onSubmit={handlePasswordMgmt}
+            isLoading={isLoading}
+            onSubmit={() => handlePasswordMgmt()}
             handleClick={() => setIsPasswordModalOpen(null)}
             isOpen={isPasswordModalOpen}
           />
