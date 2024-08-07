@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const PasswordModal = ({ isOpen, handleClick, onSubmit }) => {
+const PasswordModal = ({ isLoading, isOpen, handleClick, onSubmit }) => {
   const [password, setPassword] = useState("");
   const [passError, setPassError] = useState(false);
 
@@ -19,14 +19,14 @@ const PasswordModal = ({ isOpen, handleClick, onSubmit }) => {
     setPassword(e.target.value);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (password.length === 0) {
       setPassError(true);
       return;
     }
     if (password === "blu@2023#sevenstar") {
-      onSubmit();
+      await onSubmit();
     } else setPassError(true);
   };
   return (
@@ -78,7 +78,7 @@ const PasswordModal = ({ isOpen, handleClick, onSubmit }) => {
                 Cancel
               </button>
               <button
-                disabled={password.length <= 0}
+                disabled={isLoading || password.length <= 0}
                 type="submit"
                 className={`${
                   password.length <= 0
@@ -86,7 +86,7 @@ const PasswordModal = ({ isOpen, handleClick, onSubmit }) => {
                     : "bg-red-500 hover:bg-red-700"
                 } text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline`}
               >
-                Delete
+                {isLoading ? "Loading..." : "Delete"}
               </button>
             </div>
           </form>
