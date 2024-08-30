@@ -15,7 +15,7 @@ const Login = () => {
 
   const loginPromise = async () => {
     const url = `${BASE_URL}/api/auth/login`;
-    const redirectUrl = 'http://localhost:3000/indexx'
+    
     const data = {
       email,
       password,
@@ -26,7 +26,7 @@ const Login = () => {
       localStorage.setItem("token", res.data.token);
       cookies.set("authorization", res.data.token, { path: "/" });
       // toast.success(res.data.message);
-      router.push(redirectUrl);
+      router.push('/indexx');
     }
   };
  const handleLogin = (e) => {
