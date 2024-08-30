@@ -6,11 +6,7 @@
 
 
 
-
 export const BASE_URL =
   process.env.NODE_ENV === "production"
-    ? `https://${process.env.VERCEL_URL 
-    // || "bluwaterresort.in"
-    
-    }`
+    ? `https://${process.env.VERCEL_URL || "https://bluwaterresort.in"}`
     : "http://localhost:3000";
