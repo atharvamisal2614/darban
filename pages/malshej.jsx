@@ -61,8 +61,6 @@ const AboutMalshej = () => {
             />
           </div>
         </div>
-
-
       </div>
     </>
   );

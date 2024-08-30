@@ -9,8 +9,6 @@ const AdminLayout = ({children}) => {
           <SideNav />
         </div>
         <div className="w-4/5 ">
-       
-
             {children}
      
 

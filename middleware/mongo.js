@@ -1,12 +1,11 @@
-import mongoose from 'mongoose'
+import mongoose from 'mongoose';
 
-// const MONGO_URL = "mongodb://localhost:27017/pp"
-const MONGO_URL = process.env.MONGO_TEST_URI;
+require("dotenv").config();
+
+const MONGO_URL = process.env.MONGO_URI;
 
 if (!MONGO_URL) {
-  throw new Error(
-    'Please define the MONGO_URL environment variable inside .env.local'
-  )
+  throw new Error('Please define the MONGO_URI environment variable inside .env.local');
 }
 
 /**
@@ -14,28 +13,33 @@ if (!MONGO_URL) {
  * in development. This prevents connections growing exponentially
  * during API Route usage.
  */
-let cached = global.mongoose
+let cached = globalThis.mongoose;
 
 if (!cached) {
-  cached = global.mongoose = { conn: null, promise: null }
+  cached = globalThis.mongoose = { conn: null, promise: null };
 }
 
 async function dbConnect() {
   if (cached.conn) {
-    return cached.conn
+    return cached.conn;
   }
 
   if (!cached.promise) {
     const opts = {
       bufferCommands: false,
-    }
+    };
 
     cached.promise = mongoose.connect(MONGO_URL, opts).then((mongoose) => {
-      return mongoose
-    })
+      console.log('MongoDB connected');
+      return mongoose;
+    }).catch(err => {
+      console.error('MongoDB connection error:', err);
+      throw err;
+    });
   }
-  cached.conn = await cached.promise
-  return cached.conn
+
+  cached.conn = await cached.promise;
+  return cached.conn;
 }
 
-export default dbConnect
+export default dbConnect;

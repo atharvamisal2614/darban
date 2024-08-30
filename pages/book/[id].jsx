@@ -65,7 +65,9 @@ const Booking = ({ room }) => {
       );
 
       console.log(dates);
+
       const url = `${BASE_URL}/api/room/updated-checkavailability`;
+
       const data = {
         checkIn: state[0].startDate.toString(),
         checkOut: state[0].endDate.toString(),
@@ -73,6 +75,7 @@ const Booking = ({ room }) => {
         room: room,
         dates: dates,
       };
+
       const res = await axios.post(url, data);
 
       setRoomAvailability(res.data.roomAvailability);
@@ -92,7 +95,9 @@ const Booking = ({ room }) => {
         return false;
       }
     } catch (error) {
+
       console.log(error);
+
       if (error?.response?.data?.message) {
         toast.error(error.response.data.message);
       } else {

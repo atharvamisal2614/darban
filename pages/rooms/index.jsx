@@ -40,7 +40,7 @@ const Rooms = () => {
                 className="border p-5 my-5 rounded flex  w-1/4 gap-10 justify-between"
               >
                 <div className="text-left">
-                  <Link href={`/admin/rooms/${room.slug}`}>
+                  <Link href={`/rooms/${room.slug}`}>
                     <h4>{room.title}</h4>
                     <p>Price: {room.price}</p>
                     <p>Weekend Rates: {room.weekendRates}</p>

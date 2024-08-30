@@ -30,9 +30,9 @@ import {
 import { FaDog, FaShower } from "react-icons/fa";
 import RateCard from "@/components/RateCard";
 
+
 const BluWater = ({ room }) => {
   const router = useRouter();
-
   useEffect(() => {
     if (!router.isReady) return;
     console.log(room);
@@ -42,8 +42,7 @@ const BluWater = ({ room }) => {
       return;
     }
   }, [router]);
-
-  return (
+    return (
     <>
       <div className="flex max-md:flex-col max-w-6xl h-fit m-auto">
         <div className="md:w-2/3  p-5">
@@ -130,18 +129,45 @@ const BluWater = ({ room }) => {
 
 export default BluWater;
 
-export async function getServerSideProps(context) {
-  var room;
-  try {
-    await dbConnect();
-    const roomData = await Room.find({ slug: "bluwater" });
+// export async function getServerSideProps(context) {
+//   var room;
+//   try {
+//     await dbConnect();
+//     const roomData = await Room.find({ slug: "bluwater" });
 
-    room = JSON.parse(JSON.stringify(roomData[0]));
-  } catch (error) {
-    console.log(error);
-    room = null;
-  }
-  return {
-    props: { room }, // will be passed to the page component as props
-  };
+//     room = JSON.parse(JSON.stringify(roomData[0]));
+//   } catch (error) {
+//     console.log(error);
+//     room = null;
+//   }
+//   return {
+//     props: { room }, // will be passed to the page component as props
+//   };
+// }
+
+export async function getServerSideProps(context) {
+    let room;
+    try {
+        await dbConnect();
+        console.log("Connecting to MongoDB...");
+        const roomData = await Room.find({ slug: "bluwater" });
+        console.log("Room Data:", roomData);
+
+        if (roomData.length > 0) {
+            room = JSON.parse(JSON.stringify(roomData[0]));
+        } else {
+            room = null;
+        }
+    } catch (error) {
+        console.log("Error fetching room data:", error);
+        room = null;
+    }
+
+    return {
+        props: { room },
+    };
 }
+
+
+
+

@@ -58,6 +58,8 @@ const handler = async (req, res) => {
         return res.status(404).json({
           message: "Rooms Are Not Available",
           roomAvailability: formattedAvailability,
+          
+          
         });
       }
 

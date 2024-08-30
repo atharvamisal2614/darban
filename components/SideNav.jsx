@@ -22,67 +22,67 @@ const SideNav = () => {
         </div>
 
         <div className="flex flex-col gap-1 py-4">
-          <Link href={"/admin"}>
+          <Link href={"/"}>
             <h3 className="text-2xl text-black font-semibold py-1 hover:text-primary cursor-pointer">
               Home
             </h3>
           </Link>
           <br />
-          <Link href={"/admin/bookings"}>
+          <Link href={"/bookings"}>
             <h3 className="text-2xl text-black font-semibold py-1 hover:text-primary cursor-pointer">
               All Bookings
             </h3>
           </Link>
-          <Link href={"/admin/bookings/add-booking"}>
+          <Link href={"/bookings/add-booking"}>
             <h3 className="text-xl text-black font-semibold hover:text-primary cursor-pointer">
               Add New Booking
             </h3>
           </Link>
-          <Link href={"/admin/bookings/add-booking/bluwater"}>
+          <Link href={"/bookings/add-booking/bluwater"}>
             <h3 className="text-xl text-black hover:text-primary cursor-pointer">
               Blu Water
             </h3>
           </Link>
-          <Link href={"/admin/bookings/add-booking/blugarden"}>
+          <Link href={"/bookings/add-booking/blugarden"}>
             <h3 className="text-xl text-black hover:text-primary cursor-pointer">
               Blu Garden
             </h3>
           </Link>
-          <Link href={"/admin/bookings/add-booking/blusky"}>
+          <Link href={"/bookings/add-booking/blusky"}>
             <h3 className="text-xl text-black hover:text-primary cursor-pointer">
               Blu Sky
             </h3>
           </Link>
           <br />
 
-          <Link href={"/admin/rooms"}>
+          <Link href={"/rooms"}>
             <h3 className="text-2xl text-black font-semibold py-1 hover:text-primary cursor-pointer">
               Change Prices
             </h3>
           </Link>
 
-          <Link href={"/admin/rooms/bluwater"}>
+          <Link href={"/rooms/bluwater"}>
             <h3 className="text-xl text-black hover:text-primary cursor-pointer">
               Blu Water
             </h3>
           </Link>
-          <Link href={"/admin/rooms/blugarden"}>
+          <Link href={"/rooms/blugarden"}>
             <h3 className="text-xl text-black hover:text-primary cursor-pointer">
               Blu Garden
             </h3>
           </Link>
-          <Link href={"/admin/rooms/blusky"}>
+          <Link href={"/rooms/blusky"}>
             <h3 className="text-xl text-black hover:text-primary cursor-pointer">
               Blu Sky
             </h3>
           </Link>
         </div>
-        <Link href={"/admin/block"}>
+        <Link href={"/block"}>
           <h3 className="text-2xl text-black font-semibold py-1 hover:text-primary cursor-pointer">
             Block Rooms
           </h3>
         </Link>
-        <Link href={"/admin/coupons"}>
+        <Link href={"/coupons"}>
           <h3 className="text-2xl text-black font-semibold py-1 hover:text-primary cursor-pointer">
             Coupons
           </h3>
