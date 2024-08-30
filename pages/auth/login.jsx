@@ -26,7 +26,7 @@ const Login = () => {
       localStorage.setItem("token", res.data.token);
       cookies.set("authorization", res.data.token, { path: "/" });
       // toast.success(res.data.message);
-      router.push('/indexx');
+      router.push('/admin');
     }
   };
  const handleLogin = (e) => {
