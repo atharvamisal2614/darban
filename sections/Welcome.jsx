@@ -8,7 +8,7 @@ const Welcome = () => {
       <div className="flex md:flex-row flex-col max-w-6xl m-auto my-20">
         <div data-aos="zoom-in-right" className="md:w-2/5 p-5 md:px-10">
           <p>W E L C O M E</p>
-          <h2 className="my-5">Blu Water Resort, Malshej Ghat</h2>
+          <h2 className="my-5">Blu Water Resort, Malshej Ghat..</h2>
           <p>
           Welcome to Blu Water Resort, a luxury destination nestled in the breathtaking surroundings of Malshej Ghat. Our resort is the perfect escape from the hustle and bustle of city life, offering guests a serene and peaceful getaway surrounded by nature and a stunning lake view.
           </p>
