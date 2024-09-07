@@ -48,6 +48,9 @@ const EvModal = ({ isOpen, onChange }) => {
               <span>⚡</span>
               EV Charging Station Coming Soon
             </p>
+            <p>
+            🌸🙏Happy Ganesh Chaturthi🙏🌸
+            </p>
           </div>
         </div>
       </div>

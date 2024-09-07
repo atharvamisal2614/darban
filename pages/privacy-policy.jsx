@@ -6,7 +6,7 @@ const PrivacyPolicy = () => {
       <div className="my-10 max-w-6xl  m-auto">
         <h1>Privacy Policy</h1>
         <p>
-          At Blu Water Resort Malshej, we are committed to protecting the
+          At Darban Resort we are committed to protecting the
           privacy and personal information of our guests and website visitors.
           This Privacy Policy outlines how we collect, use, disclose, and
           safeguard your information when you interact with our website or stay
@@ -122,7 +122,7 @@ const PrivacyPolicy = () => {
         <p>
           If you have any questions, concerns, or requests regarding this
           Privacy Policy or our data practices, please contact us at [call:
-          9090104545]. Thank you for taking the time to review our Privacy
+          77418 11112 / 72640 72626]. Thank you for taking the time to review our Privacy
           Policy. By continuing to use our website or services, you acknowledge
           that you have read, understood, and agreed to the practices described
           in this Privacy Policy.

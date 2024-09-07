@@ -59,7 +59,7 @@ const ReservationAndCancellation = () => {
         <p>
           If you have any questions or need further clarification regarding our
           reservation and cancellation policies, please contact our reservation
-          team at [call : 9090104545].
+          team at [call : 77418 11112 / +91 72640 72626].
         </p>
       </div>
     </>

@@ -1,3 +1,5 @@
+import Caresoul from "@/components/Caresoul";
+import ContactForm from "@/components/ContactForm";
 import Navbar from "@/components/Navbar";
 import TopSlider from "@/components/TopSlider";
 import BluDeckIntro from "@/sections/BluDeckIntro";
@@ -22,12 +24,14 @@ export default function Home() {
       <Hero />
       <RoomsList />
       <Services />
-      <CoreServices />
-      <BluOasisIntro explore={true} />
-      <BluDeckIntro explore={true} />
+      {/* <CoreServices /> */}
+      {/* <BluOasisIntro explore={true} /> */}
+      {/* <BluDeckIntro explore={true} /> */}
+      <Caresoul />
       <ThingsToDo />
       <CustomerReviews />
       <Gallery />
+      <ContactForm />
 
 
     </>

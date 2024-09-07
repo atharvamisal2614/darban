@@ -14,21 +14,20 @@ const Contact = () => {
             <br />
             <h3>Address</h3>
             <p>
-              Blu Water Resort Malshej, At/Post Karanjale Tal:Junnar,Dist: Pune
-              412409
+              Darban Resort, Hanuman Pakhadi, Diveagar.
             </p>
           </div>
           <div className="flex flex-col items-center flex-1 ">
             <MdPhone className="text-primary" size={80} />
             <br />
             <h3>Phone No</h3>
-            <p>+91 90901 04545</p>
+            <p>+91 77418 11112 / +91 72640 72626 </p>
           </div>
           <div className="flex flex-col items-center flex-1">
             <MdEmail className="text-primary" size={80} />
             <br />
             <h3>Email</h3>
-            <p>contact@bluwaterresort.com</p>
+            <p>contact@darbanresort.com</p>
           </div>
         </div>
       </div>

@@ -7,7 +7,7 @@ const TermsAndConditions = () => {
         <h1>Terms and Conditions</h1>
         <p>
           Please read these terms and conditions carefully before using our
-          website. By accessing or using the website of Blu Water Resort
+          website. By accessing or using the website of Darban Resort
           (&quot;The Resort&quot;), you agree to be bound by these terms and
           conditions. If you do not agree with any part of these terms and
           conditions, you should not use the website.
@@ -54,7 +54,7 @@ const TermsAndConditions = () => {
 
         <p>
           The website, its content, and all intellectual property rights
-          associated with it are owned or licensed by Blu Water Resort. This
+          associated with it are owned or licensed by Darban Resort. This
           includes, but is not limited to, text, images, logos, graphics, and
           software.
         </p>
@@ -97,7 +97,7 @@ const TermsAndConditions = () => {
         <br />
         <h3>Modifications to the Terms and Conditions.</h3>
         <p>
-          Blu Water Resort reserves the right to modify, amend, or update these
+          Darban Resort reserves the right to modify, amend, or update these
           terms and conditions at any time without prior notice. Any changes
           will be effective immediately upon posting on the website. It is your
           responsibility to regularly review these terms and conditions.
@@ -108,7 +108,7 @@ const TermsAndConditions = () => {
         <p>
           If you have any questions, concerns, or requests regarding these terms
           and conditions or our website, please contact us at [call :
-          9090104545].
+            77418 11112 / +91 72640 72626].
         </p>
       </div>
     </>

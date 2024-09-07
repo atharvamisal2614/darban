@@ -24,7 +24,7 @@ const TopSlider = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="bg-[url('/images/ext-night2.jpeg')] h-[70vh] bg-fixed w-full flex justify-center items-center  bg-center bg-cover">
+          <div className="bg-[url('/darbanimages/darban-1.jpeg')] h-[70vh] bg-fixed w-full flex justify-center items-center bg-center bg-cover">
             {/* <div className=" text-center">
               <h1 className="text-white">Blu Water Resort</h1>
 
@@ -34,7 +34,7 @@ const TopSlider = () => {
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className="bg-[url('/images/blu-bg.webp')] h-[70vh] bg-fixed w-full flex justify-center items-center  bg-center bg-cover">
+          <div className="bg-[url('/darbanimages/darban-2.jpeg')] h-[70vh] bg-fixed w-full flex justify-center items-center  bg-center bg-cover">
             {/* <div className=" text-center">
               <h1 className="text-white">Blu Water Resort</h1>
 
@@ -44,7 +44,7 @@ const TopSlider = () => {
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className="bg-[url('/images/ext-night.jpeg')] h-[70vh] bg-fixed w-full flex justify-center items-center  bg-center bg-cover">
+          <div className="bg-[url('/darbanimages/darban-3.jpeg')] h-[70vh] bg-fixed w-full flex justify-center items-center  bg-center bg-cover">
             {/* <div className=" text-center">
               <h1 className="text-white">Blu Water Resort</h1>
 

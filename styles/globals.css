@@ -13,7 +13,7 @@
 }
 
 :root {
-  --primary: #16acbd;
+  --primary: #15803d;
   --secondary: #525252;
   --text: #7e7e7e;
 }
@@ -24,6 +24,7 @@ body {
   overflow-x: hidden;
   font-family: "Lato", sans-serif;
   color: var(--secondary);
+  /* background-color: #d1fae5; */
 }
 
 h1 {
@@ -64,7 +65,7 @@ button {
   font-size: 12px;
   border-radius: 4px;
   text-transform: uppercase;
-  background: var(--primary);
+  background: #15803d;
   color: white;
   letter-spacing: 0.1em;
 }
@@ -79,7 +80,7 @@ button {
       #16acbd75,
       #16acbd75
     ),
-    url("/images/blu-bg.webp");
+    url("/darbanimages/darban-1.jpeg");
     background-position: center;
     background-size: cover;
 }
@@ -115,4 +116,46 @@ button {
     letter-spacing: 1px;
     font-weight: normal;
   }
+}
+
+
+
+
+
+
+@font-face {
+  font-family: 'Learning Curve';
+  src: url('/fonts/learning_curve.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Sofia Regular';
+  src: url('/fonts/sofia_regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Some To Love';
+  src: url('/fonts/some_to_love.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Life Sugar';
+  src: url('/fonts/life_sugar.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cartitra';
+  src: url('/fonts/cartitra-italic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Croogs';
+  src: url('/fonts/croogs.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
