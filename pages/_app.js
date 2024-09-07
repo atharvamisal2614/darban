@@ -160,13 +160,13 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Blu Water Resort</title>
+        <title>Darban Resort</title>
         <meta
           name="description"
-          content="Blu Water Resort - Resort in Malshej"
+          content="Darban Resort"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/blu-logo.png" />
+        <link rel="icon" href="/darbanimages/darban-logo-og.png" />
       </Head>
 
       {loading ? (
