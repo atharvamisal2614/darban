@@ -182,7 +182,7 @@ const Welcome = () => {
             welcomes you to <span className="text-green-600">heaven on earth.</span>
           </p>
           <Link href={"/overview"}>
-            <button className="mt-3 px-6 py-4 text-md bg-gradient-to-r from-purple-800 to-green-600 hover:bg-primary text-white font-semibold rounded-md transition duration-300">
+            <button className="mt-3 px-6 py-4 text-lg bg-gradient-to-r from-purple-800 to-green-600 hover:bg-primary text-white font-semibold rounded-md transition duration-300">
               Explore Resort
             </button>
           </Link>

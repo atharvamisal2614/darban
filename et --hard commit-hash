@@ -1,0 +1,25 @@
+[33m8522cb0[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m first commit
+[33m5e29bcd[m Paths changed
+[33m4cb1358[m Admin Panel Updated
+[33m8a91a78[m updated to use env var
+[33m77dd51b[m my commit
+[33mda704e9[m My commit
+[33m547a430[m My first Web
+[33m1c989ab[m First Commit
+[33m4afeb37[m Merge pull request #1 from pr-a-s-h-a-n-t/prevent-overbooking-rooms
+[33m5ef33e3[m overlapping booking delete issue fixed.
+[33md334da2[m status checks added.
+[33m6ff0975[m clean up
+[33m54338c6[m delete confirmation modal added
+[33m522f42f[m room status check api modified.
+[33m248d60a[m fix
+[33m3eb7d31[m node mailer issue fixed(email send after booking fixed on both sides admin as well as on client)
+[33m668f9eb[m unwanted console clean up.
+[33mc8943a9[m fix for the modal
+[33mad44914[m base Url changed
+[33m0e425be[m fixes
+[33me31714c[m password change for the mail.
+[33m17f1c25[m few fixes
+[33mf930b4e[m custom modal added.
+[33m30d6702[m first commit
+[33m29846ff[m first commit
