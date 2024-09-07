@@ -220,7 +220,7 @@ const BluDeck = () => {
           spacious interiors, every detail is crafted to enhance your 
           relaxation. Large windows offer stunning views of the lush greenery
           and serene surroundings, allowing you to immerse yourself in the
-          natural beauty of the area. Whether you're enjoying a romantic
+          natural beauty of the area. Whether you are enjoying a romantic
           getaway or a family vacation, the rooms at Darban Resort
           promise a tranquil and memorable experience
           </p>
