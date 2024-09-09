@@ -123,7 +123,7 @@ const Welcome = () => {
       <div className="mt-44 flex md:flex-row flex-col w-full m-auto my-20 overflow-hidden bg-white">
         {/* Text Section */}
         <div data-aos="fade-right" className="md:w-2/5 p-10">
-          <p className=" wow animate__fadeInUpBig text-6xl text-center font-bold tracking-widest text-gray-900 font-lifeSugar" data-wow-duration="3s">
+          <p className=" wow animate__fadeInUpBig text-4xl text-center font-bold tracking-widest text-gray-900 font-lifeSugar" data-wow-duration="3s">
             
                 W E L C O M E
                
