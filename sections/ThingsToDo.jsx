@@ -21,7 +21,7 @@
 //       </p>
 
 //       <div className="flex mt-10 flex-col md:flex-row">
-//         <div className="md:w-1/3 w-full">
+//         <div className="md:w-1/3 w-full wow animate__fadeInUp">
 //           <Place
 //             image={"/places/shivneri.jpg"}
 //             name={"Shivneri Fort"}
@@ -44,7 +44,7 @@
 //             }
 //           />
 //         </div>
-//         <div className="md:w-1/3 w-full">
+//         <div className="md:w-1/3 w-full wow animate__fadeInUp">
 //           <Place
 //             image={"/places/Lenyadri.jpg"}
 //             name={"Ozar and Lenyadri Caves"}
@@ -67,7 +67,7 @@
 //             }
 //           />
 //         </div>
-//         <div className="md:w-1/3 w-full">
+//         <div className="md:w-1/3 w-full wow animate__fadeInUp">
 //           <Place
 //             image={"/places/ozar.jpg"}
 //             name={"Junnar Caves"}
@@ -124,7 +124,7 @@
 //       </p>
 
 //       <div className="flex flex-col md:flex-row gap-5 md:gap-10">
-//         <div className="md:w-1/3 w-full">
+//         <div className="md:w-1/3 w-full wow animate__fadeInUp">
 //           <Place
 //             image="/places/shivneri.jpg"
 //             name="Shivneri Fort"
@@ -141,7 +141,7 @@
 //             desc="Boating & Camping are popular lakeside activities during the monsoon and winter seasons when sufficient water is available in the reservoir."
 //           />
 //         </div>
-//         <div className="md:w-1/3 w-full">
+//         <div className="md:w-1/3 w-full wow animate__fadeInUp">
 //           <Place
 //             image="/places/Lenyadri.jpg"
 //             name="Ozar and Lenyadri Caves"
@@ -158,7 +158,7 @@
 //             desc="This is the highest peak in Maharashtra, located near Bhandardara, and is a popular destination for trekking and adventure enthusiasts."
 //           />
 //         </div>
-//         <div className="md:w-1/3 w-full">
+//         <div className="md:w-1/3 w-full wow animate__fadeInUp">
 //           <Place
 //             image="/places/ozar.jpg"
 //             name="Junnar Caves"
@@ -210,7 +210,7 @@ const ThingsToDo = () => {
       className="flex flex-col items-center max-w-full mx-auto py-20 px-4 bg-gradient-to-t from-purple-800 to-green-600 shadow-2xl rounded-lg"
     >
       <p
-        className=" font-Cartitra wow animate__fadeInUpBig text-3xl font-semibold uppercase tracking-wider mb-4 text-gray-100 text-center"
+        className=" font-lifeSugar wow animate__fadeInUpBig text-5xl font-semibold uppercase tracking-wider mb-4 text-gray-100 text-center"
         data-wow-duration="3s"
         data-aos="fade-down"
       >
@@ -218,14 +218,14 @@ const ThingsToDo = () => {
         <span className="p-2"></span> D O
       </p>
       <h2
-        className="font-Croogs wow animate__fadeInDownBig text-6xl font-extrabold my-5 text-blue-800 drop-shadow-lg text-center"
+        className="font-learningCurve wow animate__fadeInDownBig text-6xl font-extrabold my-5 text-blue-800 drop-shadow-lg text-center"
         data-wow-duration="3s"
         data-aos="fade-up"
       >
         Nearby Places
       </h2>
       <p
-  className="mx-auto mr-44 ml-44 text-2xl font-lifeSugar wow animate__backInLeft px-4 md:px-10 mb-10 text-gray-100 leading-relaxed text-justify flex items-center justify-center"
+  className="mx-auto text-lg md:text-2xl font-lifeSugar wow animate__backInLeft px-4 md:px-10 lg:px-20 xl:px-44 mb-10 text-gray-100 leading-relaxed text-justify flex items-center justify-center"
   data-wow-duration="2s"
   data-aos="zoom-in"
 >
@@ -238,22 +238,22 @@ const ThingsToDo = () => {
 </p>
 
 
-      <div className="flex flex-col md:flex-row gap-5 md:gap-10 w-full">
-        <div className="md:w-1/3 w-full" data-aos="flip-left">
+      <div className=" flex flex-col md:flex-row gap-5 md:gap-10 w-full" >
+        <div className="md:w-1/3 w-full wow animate__fadeInUp" data-wow-duration="3s">
           <Place
             image="/darbanimages/diveagar.jpg"
             name="Diveagar Beach"
             desc=" serene beach town along the Konkan coast, known for its pristine beaches and lush green surroundings, offering a peaceful retreat away from the hustle and bustle."
           />
         </div>
-        <div className="md:w-1/3 w-full" data-aos="flip-right">
+        <div className="md:w-1/3 w-full wow animate__fadeInUp" data-wow-duration="3s" >
           <Place
             image="/darbanimages/murud_janjira.webp"
             name="Murud Janjira Fort"
             desc="An impressive sea fort located off the coast of Murud, renowned for its historical significance and strategic location, surrounded by the Arabian Sea."
           />
         </div>
-        <div className="md:w-1/3 w-full" data-aos="flip-up">
+        <div className="md:w-1/3 w-full wow animate__fadeInUp" data-wow-duration="3s">
           <Place
             image="/places/boating.jpg"
             name="Boating"
@@ -263,7 +263,7 @@ const ThingsToDo = () => {
       </div>
 
       <div className="flex flex-col md:flex-row gap-5 md:gap-10 mt-10 w-full">
-        <div className="md:w-1/3 w-full" data-aos="flip-left">
+        <div className="md:w-1/3 w-full wow animate__fadeInUp" data-wow-duration="3s" >
           <Place
             image="/darbanimages/harihareshwar.jpg"
             name="Harihareshwar Fort"
@@ -272,14 +272,14 @@ const ThingsToDo = () => {
 "
           />
         </div>
-        <div className="md:w-1/3 w-full" data-aos="flip-right">
+        <div className="md:w-1/3 w-full wow animate__fadeInUp" data-wow-duration="3s" >
           <Place
             image="/darbanimages/uttareshwar.jpeg"
             name="Uttareshwar Temple"
             desc="An ancient temple dedicated to Lord Shiva, situated in Uttreshwar with intricate carvings and serene ambiance, making it a prominent spiritual site in the region."
           />
         </div>
-        <div className="md:w-1/3 w-full" data-aos="flip-up">
+        <div className="md:w-1/3 w-full wow animate__fadeInUp" data-wow-duration="3s" >
           <Place
             image="/darbanimages/phansad.jpeg"
             name="Phansad Sanctuary"
@@ -289,21 +289,21 @@ const ThingsToDo = () => {
       </div>
 
       <div className="flex flex-col md:flex-row gap-5 md:gap-10 mt-10 w-full">
-        <div className="md:w-1/3 w-full" data-aos="flip-left">
+        <div className="md:w-1/3 w-full wow animate__fadeInUp" data-wow-duration="3s">
           <Place
             image="/darbanimages/para_sailing.jpg"
             name="Para Sailing"
             desc="A thrilling adventure sport available along the Konkan coast, offering breathtaking aerial views of the coastline and a sense of exhilaration."
           />
         </div>
-        <div className="md:w-1/3 w-full" data-aos="flip-right">
+        <div className="md:w-1/3 w-full wow animate__fadeInUp" data-wow-duration="3s" >
           <Place
             image="/darbanimages/bankot_fort.jpg"
             name="Bankot Fort"
             desc="A historical fort located near the village of Bankot, offering spectacular views of the surrounding sea and countryside, and a glimpse into the region's past."
           />
         </div>
-        <div className="md:w-1/3 w-full" data-aos="flip-up">
+        <div className="md:w-1/3 w-full wow animate__fadeInUp" data-wow-duration="3s">
           <Place
             image="/darbanimages/peshwa_memorial.jpg"
             name="Peshwa Memorial"

@@ -119,10 +119,10 @@ const RoomsList = () => {
      <div className="flex flex-col md:flex-row max-w-6xl m-auto gap-5" data-aos="fade-up">
      
   <div className="md:w-1/2 flex flex-col mb-10">
-    <h3 className="text-center px-10 py-5 text-white text-3xl font-bold mb-2 bg-gradient-to-r from-green-600 to-purple-800 w-fit m-auto rounded-md">
+    <h3 className=" mt-20 text-center px-1 py-1 text-white text-3xl font-bold mb-2 bg-gradient-to-r from-green-600 to-purple-800 w-fit m-auto rounded-md">
       DELUXE ROOM
     </h3>
-    <p className="mt-5 text-xl font-bold text-green-600 text-justify mb-4 px-4">
+    <p className="mt-5 text-[18px] font-serif text-green-600 text-justify mb-4 px-4">
       <span className="text-purple-800">Relax</span> in style at Deluxe{" "}
       <span className="text-purple-800">Darban Resort's</span>, featuring{" "}
       contemporary furnishings and a <span className="text-purple-800">cozy ambiance</span>, ensuring a comfortable{" "}
@@ -163,10 +163,10 @@ const RoomsList = () => {
 
 
   <div className="md:w-1/2 flex flex-col mb-10">
-    <h3 className="text-center px-10 py-5 text-white text-3xl font-bold mb-2 bg-gradient-to-r from-green-600 to-purple-800 w-fit m-auto rounded-md">
+    <h3 className="text-center px-1 py-1 text-white text-3xl font-bold mb-2 bg-gradient-to-r from-green-600 to-purple-800 w-fit m-auto rounded-md">
       EXECUTIVE DELUXE ROOM
     </h3>
-    <p className="mt-5 text-xl font-bold text-green-600 text-justify mb-4 px-4">
+    <p className="mt-5 text-[18px] font-serif text-green-600 text-justify mb-4 px-4">
       <span className="text-purple-800">Enjoy</span> sophistication and comfort in the {" "}
       <span className="text-purple-800">Executive</span> Deluxe Room at Darban Resort, with{" "}
       <span className="text-purple-800">refined</span> interior and {" "}
@@ -196,7 +196,7 @@ const RoomsList = () => {
           <MdFreeBreakfast className="text-white" size={40} />
         </div>
       </div>
-      <Link href={"/blunest/bluwater"}>
+      <Link href={"/blunest/blugarden"}>
         <p className="text-white text-3xl rounded-3xl bg-purple-800 px-6 py-2 font-bold mt-8">
           Click Here
         </p>
@@ -212,10 +212,10 @@ const RoomsList = () => {
 
 <div className="mt-20 flex flex-col md:flex-row max-w-6xl m-auto gap-5 " data-aos="fade-up">
   <div className="md:w-1/2 flex flex-col mb-10">
-    <h3 className="text-center px-10 py-5 text-white text-3xl font-bold mb-2 bg-gradient-to-r from-green-600 to-purple-800 w-fit m-auto rounded-md">
+    <h3 className="text-center px-1 py-1 text-white text-3xl font-bold mb-2 bg-gradient-to-r from-green-600 to-purple-800 w-fit m-auto rounded-md">
       PREMIUM DELUXE ROOM
     </h3>
-    <p className="mt-5 text-xl font-bold text-green-600 text-justify mb-4 px-4">
+    <p className="mt-5 text-[18px] font-serif text-green-600 text-justify mb-4 px-4">
       <span className="text-purple-800">Indulge</span> in luxury{" "}
       <span className="text-purple-800">with</span>the{" "}
       Premium Deluxe Room at <span className="text-orange-600">Darban Resort,</span>, offering {" "}
@@ -246,7 +246,7 @@ const RoomsList = () => {
           <MdFreeBreakfast className="text-white" size={40} />
         </div>
       </div>
-      <Link href={"/blunest/bluwater"}>
+      <Link href={"/blunest/blusky"}>
         <p className="text-white text-3xl rounded-3xl bg-purple-800 px-6 py-2 font-bold mt-8">
           Click Here
         </p>
@@ -257,10 +257,10 @@ const RoomsList = () => {
 
 
   <div className="md:w-1/2 flex flex-col mb-10">
-    <h3 className="text-center px-10 py-5 text-white text-3xl font-bold mb-2 bg-gradient-to-r from-green-600 to-purple-800 w-fit m-auto rounded-md">
+    <h3 className="text-center px-1 py-1 text-white text-3xl font-bold mb-2 bg-gradient-to-r from-green-600 to-purple-800 w-fit m-auto rounded-md">
     PRESIDENTIAL  SUITE
     </h3>
-    <p className="mt-5 text-xl font-bold text-green-600 text-justify mb-4 px-4">
+    <p className="mt-5 text-[18px] font-serif text-green-600 text-justify mb-4 px-4">
       <span className="text-purple-800">Experience</span>  unparalleled grandeur in the {" "}
       <span className="text-purple-800">
 Presidential Suite
@@ -307,10 +307,10 @@ Presidential Suite
 </div> 
 
 <div className="mt-20 md:w-1/3 m-auto flex flex-col mb-10" data-aos="fade-up">
-    <h3 className="text-center px-10 py-5 text-white text-3xl font-bold mb-2 bg-gradient-to-r from-green-600 to-purple-800 w-fit m-auto rounded-md">
+    <h3 className="text-center px-1 py-1 text-white text-3xl font-bold mb-2 bg-gradient-to-r from-green-600 to-purple-800 w-fit m-auto rounded-md">
     ROYAL SUITE ROOM
     </h3>
-    <p className="mt-5 text-xl font-bold text-green-600 text-justify mb-4 px-4">
+    <p className="mt-5 text-[18px] font-serif text-green-600 text-justify mb-4 px-4">
       <span className="text-purple-800">Experience</span> ultimate luxury at Darban Resort's {" "}
       <span className="text-purple-800">Royal Suite </span> a {" "}
 <span className="text-purple-800">spacious</span> and elegant haven that 
@@ -341,7 +341,7 @@ combines modern{" "}
           <MdFreeBreakfast className="text-white" size={40} />
         </div>
       </div>
-      <Link href={"/blunest/bluwater"}>
+      <Link href={"/blunest/garden"}>
         <p className="text-white text-3xl rounded-3xl bg-purple-800 px-6 py-2 font-bold mt-8">
           Click Here
         </p>

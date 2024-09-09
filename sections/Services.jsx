@@ -157,7 +157,45 @@ const Services = () => {
             alt="Darban Resort Logo"
           />
         </div>
+       
       </div>
+      {/* <div className="flex" >
+      <Image
+            src={"/darbanimages/darban-1_sketch.png"}
+            className="h-full object-cover relative -z-10 mx-20 wow animate__fadeInRight" data-wow-duration="3s"
+            width={700}
+            height={700}
+            alt="Darban Resort Logo"
+            c
+          />
+
+<Image
+            src={"/darbanimages/darban-2_sketch.png"}
+            className="h-full object-cover relative -z-10 mx-20 wow animate__fadeInLeft" data-wow-duration="3s"
+            width={700}
+            height={700}
+            alt="Darban Resort Logo"
+            c
+          />
+      </div> */}
+      <div className="flex flex-col md:flex-row gap-y-10">
+  <Image
+    src={"/darbanimages/darban-1_sketch.png"}
+    className="h-full object-cover relative -z-10 mx-auto md:mx-20 wow animate__fadeInRight"
+    data-wow-duration="3s"
+    width={700}
+    height={700}
+    alt="Darban Resort Logo"
+  />
+  <Image
+    src={"/darbanimages/darban-2_sketch.png"}
+    className="h-full object-cover relative -z-10 mx-auto md:mx-20 wow animate__fadeInLeft"
+    data-wow-duration="3s"
+    width={700}
+    height={700}
+    alt="Darban Resort Logo"
+  />
+</div>
     </>
   );
 };

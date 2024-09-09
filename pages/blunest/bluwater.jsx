@@ -20,14 +20,16 @@ import {
   MdDinnerDining,
   MdOutlineSatellite,
   MdOutlineSmokeFree,
+  MdBatteryChargingFull,
+  MdEvStation,
 } from "react-icons/md";
 import {
-  GiTowel,
-  GiWashingMachine,
-  GiWineGlass,
-  GiCoffeePot,
+  GiDiamondRing,
+  GiPalmTree,
+  GiFairyWand,
+  GiBabyfootPlayers
 } from "react-icons/gi";
-import { FaDog, FaShower } from "react-icons/fa";
+import { FaCar,  FaSwimmingPool, FaConciergeBell,FaUtensils } from "react-icons/fa";
 import RateCard from "@/components/RateCard";
 
 
@@ -51,7 +53,7 @@ const BluWater = ({ room }) => {
             {/* Lorem ipsum dolor sit amet consectetur adipisicing. */}
           </p>
 
-          <Image src={"/images/room1.jpeg"} width={1000} height={700} alt="" />
+          <Image src={"/darbanimages/deluxe_room.jpeg"} width={1000} height={700} alt="" />
 
           <p className="my-10">
             Come stay in the comfort room for a real “home away from home”
@@ -64,57 +66,54 @@ const BluWater = ({ room }) => {
 
           <h3 className="mb-5">Aminities</h3>
           <div className="flex flex-wrap justify-center">
-            <Aminity icon={<BsWater size={50} />} name={"Lakeview"} />
-            <Aminity icon={<TbAirConditioning size={50} />} name={"AC"} />
-            <Aminity icon={<AiOutlineWifi size={50} />} name={"Free Wifi"} />
+            <Aminity icon={<GiFairyWand size={50} className={"text-rose-500"} />} name={"Kids Wonderland"} />
+            <Aminity icon={<MdBatteryChargingFull size={50} className={"text-yellow-400"} />} name={"Power Backup"} />
+            <Aminity icon={<AiOutlineWifi size={50} className={"text-blue-500"} />} name={"Free Wifi"} />
             <Aminity
-              icon={<MdOutlineSmokeFree size={50} />}
-              name={"Non-smoking room"}
+              icon={<GiDiamondRing size={50} className={"text-pink-500"} />}
+              name={"Marriage Lawns"}
             />
-            <Aminity icon={<BiDish size={50} />} name={"Room service"} />
-            <Aminity icon={<BsTv size={50} />} name={"Flat screen TV"} />
+            <Aminity icon={<FaCar size={50} className={"text-gray-700"} />} name={"Safe Parking"} />
+            <Aminity icon={<FaSwimmingPool size={50} className={"text-teal-400"} />} name={"Swimming Pool"} />
             <Aminity
-              icon={<GiCoffeePot size={50} />}
-              name={"Electric kettle"}
+              icon={<MdEvStation size={50} className={"text-green-500"} />}
+              name={"EV Charging"}
             />
-            <Aminity icon={<BiFridge size={50} />} name={"Refrigerator"} />
-            <Aminity icon={<FaDog size={50} />} name={"Pet friendly"} />
-            <Aminity icon={<FaShower size={50} />} name={"Private bathroom"} />
+            <Aminity icon={<FaConciergeBell size={50} className={"text-amber-500"} />} name={"Personalized Hospitality"} />
+            <Aminity icon={<GiPalmTree size={50} className={"text-cyan-600"} />} name={"Coastal Retreat"} />
+            
             <Aminity
-              icon={<MdDinnerDining size={50} />}
-              name={"In room Dinning"}
+              icon={<FaUtensils size={50} className={"text-orange-600"} />}
+              name={"Restaurant"}
             />
-            <Aminity
-              icon={<BsFileLock size={50} />}
-              name={"Cupboard with locker"}
-            />
+           
           </div>
         </div>
 
         <div className="md:w-1/3 max-md:p-5">
           {/* <div className="sticky top-0 h-fit bg-red-50 "> */}
 
-          <div className="bg-sky-50 rounded p-5 mt-10">
-            <h4>Starting From</h4>
+          <div className="bg-gradient-to-r from-purple-100 to-green-100 rounded-2xl p-5 mt-10">
+            <h4 >Starting From</h4>
             <h2>Rs. {room?.price}/-</h2>
             <p>Per Night (Dinner & Breakfast included)</p>
           </div>
           <Link href={`/book/${room?.slug}`}>
-            <button className="w-full text-base my-5">Book Now</button>
+          <button className="w-full text-base my-5 bg-gradient-to-r from-purple-800 to-green-600 hover:bg-gradient-to-r hover:from-green-600 hover:to-purple-800">Book Now</button>
           </Link>
 
           <div className="info flex gap-5">
-            <div className="w-1/2 p-3 bg-slate-100  flex flex-col items-center ">
-              <BiBed size={50} className={"text-primary"} />
+            <div className="w-1/2 p-3 bg-gradient-to-r from-purple-100 to-green-100  flex flex-col items-center ">
+              <BiBed size={50} className={"text-indigo-500"} />
               <p>1 King</p>
             </div>
-            <div className="w-1/2 p-3 bg-slate-100  flex flex-col items-center ">
-              <BiArea size={50} className={"text-primary"} />
+            <div className="w-1/2 p-3 bg-gradient-to-r from-purple-100 to-green-100  flex flex-col items-center ">
+              <BiArea size={50} className={"text-sky-600"} />
               <p>313 sq ft</p>
             </div>
           </div>
 
-          <div className="p-5 my-5  bg-blue-50">
+          <div className="p-5 my-5 bg-gradient-to-r from-purple-100 to-green-100">
             <p className="font-semibold text-center">
               Check in 12:30 PM <br /> Check out 11:00 AM
             </p>

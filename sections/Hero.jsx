@@ -177,54 +177,26 @@ import React, { useEffect, useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import "animate.css"
 
 const Hero = () => {
-  const [startTypewriter, setStartTypewriter] = useState({
-    heading1: false,
-    paragraph1: false,
-    heading2: false,
-    paragraph2: false,
-    heading3: false,
-    paragraph3: false,
-  });
 
   useEffect(() => {
-    AOS.init({
-      once: false, // Ensures that the animation occurs every time
-    });
-
-    const handleScroll = () => {
-      const elements = [
-        { id: 'typewriter-heading1', key: 'heading1' },
-        { id: 'typewriter-paragraph1', key: 'paragraph1' },
-        { id: 'typewriter-heading2', key: 'heading2' },
-        { id: 'typewriter-paragraph2', key: 'paragraph2' },
-        { id: 'typewriter-heading3', key: 'heading3' },
-        { id: 'typewriter-paragraph3', key: 'paragraph3' },
-      ];
-
-      elements.forEach(({ id, key }) => {
-        const element = document.getElementById(id);
-        if (element && element.getBoundingClientRect().top < window.innerHeight) {
-          setStartTypewriter((prev) => ({
-            ...prev,
-            [key]: true,
-          }));
-        }
+    if (typeof window !== "undefined") {
+      const WOW = require("wow.js");
+      const wow = new WOW({
+        live: false,
+        resetAnimation: true,
       });
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+      wow.init();
+    }
   }, []);
 
-  return (
+
+ return (
     <>
       {/* First Section */}
-      <div className="flex flex-col md:flex-row w-full mx-auto my-20 rounded-lg shadow-lg overflow-hidden">
+      <div className="flex flex-col md:flex-row w-full mx-auto my-20 overflow-hidden">
         <div 
           data-aos="fade-left" 
           className="md:w-3/5 relative"
@@ -243,83 +215,73 @@ const Hero = () => {
           data-aos="fade-right" 
           className="md:w-2/5 p-10 bg-white relative"
         >
-          <p className="text-2xl font-bold font-sofiaRegular tracking-widest text-gray-900" id="typewriter-heading1">
-            {startTypewriter.heading1 && (
-              <Typewriter
-                words={["R E S T A U R A N T"]}
-                loop={1}
-                cursor
-                cursorStyle='_'
-                typeSpeed={70}
-                deleteSpeed={50}
-                delaySpeed={1000}
-              />
-            )}
-          </p>
-          <h2 className=" font-lifeSugar my-5 text-4xl " id="typewriter-heading2">
-            {startTypewriter.heading2 && (
-              <Typewriter
-                words={["Make your Holidays Special with our Hotel."]}
-                loop={1}
-                cursor
-                cursorStyle='_'
-                typeSpeed={70}
-                deleteSpeed={50}
-                delaySpeed={1000}
-              />
-            )}
+          <p className="wow animate__fadeInUpBig text-5xl text-center font-bold font-lifeSugar tracking-widest text-gray-900" id="typewriter-heading1"
+          data-wow-duration="3s">
+           
+               R E S T A U R A N T </p>
+               
+          <h2 className=" wow animate__fadeInDown font-learningCurve my-5 text-4xl text-center " id="typewriter-heading2"
+           data-wow-duration="3s">
+            
+               Make your Holidays Special with our Hotel.
+               
           </h2>
-          <p className="text-3xl mb-4 font-bold text-gray-800" id="typewriter-paragraph1">
-          <span className="text-green-600">Taste buds</span> create memories, and here at <span className="text-green-600">Darban</span>, you can <span className="text-purple-800"> order</span> whatever your tummy wishes. When you are in <span className="text-green-600">Konkan</span>, it's mandatory to pamper your tummy with  <span className="text-purple-800">sizzling Konkani food</span>. We serve a great variety of  <span className="text-green-600">vegetarian</span> and <span className="text-purple-800">non-vegetarian</span> coastal <span className="text-green-600">Konkani flavors</span> and <span className="text-purple-800">Maharashtrian food</span>. The authentic coastal <span className="text-green-600">Konkan flavors</span> are prepared with a lot of care, sourcing the freshest seafood catch each morning, using the most local ingredients, and each meal makes a memory. Trying <span className="text-purple-800">Konkani cuisine</span> is said to be an adventure in itself, as there is much to explore.
+          <p className="wow animate__fadeInUp text-[18px] mb-4 font-serif text-gray-800" id="typewriter-paragraph1"
+          data-wow-duration="3s">
+          <span className="text-green-600">Taste buds</span> create memories, and here at <span className="text-green-600">Darban</span>, you can <span className="text-purple-800"> order</span> whatever your tummy wishes. When you are in <span className="text-green-600">Konkan</span>, it's mandatory to pamper your tummy with  <span className="text-purple-800">sizzling Konkani food</span>. We serve a great variety of  <span className="text-green-600">vegetarian</span> and <span className="text-purple-800">non-vegetarian</span> coastal <span className="text-green-600">Konkani flavors</span> and <span className="text-purple-800">Maharashtrian food</span>.
 </p>
+<div className="wow animate__bounceInUp" data-wow-duration="3s">
+<Image
+            src="/darbanimages/one_line_rest.png"
+       
+            width={900}
+            height={700}
+            alt="One lin Restaurant"
+          />
+</div>
+ 
 
         </div>
       </div>
 
       {/* Second Section */}
-      <div className="flex flex-col md:flex-row w-full mx-auto my-20 rounded-lg shadow-lg overflow-hidden">
+      <div className="flex flex-col md:flex-row w-full mx-auto my-20 overflow-hidden">
         <div 
           data-aos="fade-right" 
           className="md:w-2/5 p-10 bg-white text-gray-800 relative"
         >
-          <p className="text-2xl font-bold font-sofiaRegular tracking-widest text-gray-800" id="typewriter-heading3">
-            {startTypewriter.heading3 && (
-              <Typewriter
-                words={["S P E C I A L I T I E S"]}
-                loop={1}
-                cursor
-                cursorStyle='_'
-                typeSpeed={70}
-                deleteSpeed={50}
-                delaySpeed={1000}
-              />
-            )}
+          <p className="wow animate__fadeInUpBig text-5xl font-bold font-lifeSugar tracking-widest text-gray-800 text-center" id="typewriter-heading3"
+          data-wow-duration="3s">
+            
+              S P E C I A L I T I E S
+               
           </p>
-          <h2 className="my-5 text-3xl font-bold" id="typewriter-heading4">
-            {startTypewriter.heading4 && (
-              <Typewriter
-                words={["Enjoy Exciting Activities During Your Stay"]}
-                loop={1}
-                cursor
-                cursorStyle='_'
-                typeSpeed={70}
-                deleteSpeed={50}
-                delaySpeed={1000}
-              />
-            )}
+          <h2 className="text-center wow animate__fadeInDown my-8 font-learningCurve text-4xl" id="typewriter-heading4"
+            data-wow-duration="3s">
+            
+            Enjoy Exciting Activities During Your Stay
+                
           </h2>
-          <p className="text-3xl font-bold mt-3 mb-4 text-gray-800" id="typewriter-paragraph2">
+          <p className="wow animate__fadeInUp text-[18px] font-sans mt-3 mb-4 text-gray-800" id="typewriter-paragraph2"
+          data-wow-duration="3s">
           
   There are also a great number of <span className="text-green-600">vegetarian dishes</span> as well.
    Many of these dishes tend to have <span className="text-purple-800">coconut</span> in them too, 
    and this gives these dishes a <span className="text-green-600">characteristic taste</span>  that can be easily
     recognized. Our piping hot <span className="text-green-600">“Ukadiche modak”</span>, 
     made with fresh <span className="text-purple-800">coconuts</span>, is a must-try. 
-    <span className="text-green-600"> The mouth-watering modak</span> is one of the most loved dishes from our <span className="text-purple-800">restaurant.</span>
-
-
-               
+  
           </p>
+          <div className="wow animate__fadeInUp" data-wow-duration="3s">
+          <Image
+            src="/darbanimages/one_line_speciality.jpg"
+            width={900}
+            height={400}
+            alt="One line Speciality"
+            className="-mb-16"
+          />
+          </div>
+         
         </div>
         
         <div className="md:w-3/5 relative">

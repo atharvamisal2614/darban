@@ -95,81 +95,47 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { Typewriter } from "react-simple-typewriter";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "animate.css";
 
 const Welcome = () => {
-  const [startTypewriter, setStartTypewriter] = useState(false);
+  
 
-  useEffect(() => {
-    AOS.init({
-      once: true,
-    });
-
-    const handleScroll = () => {
-      const element = document.getElementById("typewriter-paragraph");
-      if (element) {
-        const rect = element.getBoundingClientRect();
-        if (rect.top < window.innerHeight && rect.bottom >= 0) {
-          setStartTypewriter(true);
-          window.removeEventListener("scroll", handleScroll); // Remove event listener after triggering once
-        }
-      }
-    };
-
-    // Trigger the typewriter on page load if already visible
-    handleScroll();
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+  
+    useEffect(() => {
+    if (typeof window !== "undefined") {
+      const WOW = require("wow.js");
+      const wow = new WOW({
+        live: false,
+        resetAnimation: true,
+      });
+      wow.init();
+    }
   }, []);
 
+
+    
+
+   
   return (
     <>
-      <div className="mt-36 flex md:flex-row flex-col w-full m-auto my-20 shadow-lg rounded-lg overflow-hidden bg-white">
+      <div className="mt-44 flex md:flex-row flex-col w-full m-auto my-20 overflow-hidden bg-white">
         {/* Text Section */}
         <div data-aos="fade-right" className="md:w-2/5 p-10">
-          <p className="text-2xl font-bold tracking-widest text-gray-900 font-sofiaRegular">
-            {startTypewriter && (
-              <Typewriter
-                words={["W E L C O M E"]}
-                loop={1}
-                cursor
-                cursorStyle="_"
-                typeSpeed={70}
-                deleteSpeed={50}
-                delaySpeed={1000}
-              />
-            )}
+          <p className=" wow animate__fadeInUpBig text-6xl text-center font-bold tracking-widest text-gray-900 font-lifeSugar" data-wow-duration="3s">
+            
+                W E L C O M E
+               
           </p>
-          <h2 className="font-learningCurve my-5 text-5xl font-bold">
-            {startTypewriter && (
-              <Typewriter
-                words={["Darban Resort, Diveagar"]}
-                loop={1}
-                cursor
-                cursorStyle="_"
-                typeSpeed={70}
-                deleteSpeed={50}
-                delaySpeed={1000}
-              />
-            )}
+          <h2 className="wow animate__fadeInDown text-center font-learningCurve my-5 text-5xl font-bold" data-wow-duration="3s">
+           
+                Darban Resort, Diveagar
+               
           </h2>
-          <h4
-            id="typewriter-paragraph"
-            className="font-lifeSugar text-4xl mb-4 text-gray-700"
-          >
-            
-                  "We Kokanis take hosting as a pleasure and our resort gives the cozy feel of a home away from home.",
-            
-          </h4>
+          
 
-          <p className="text-3xl font-bold mb-4 text-gray-800">
+          <p className="font-sans text-[18px] mb-4 text-gray-600 wow animate__fadeInUp" data-wow-duration="3s">
             <span className="text-green-600">Our place </span> is known for its
             thoughtful <span className="text-green-600"> hospitality </span> that
             gives <span className="text-purple-800"> personal </span> attention to
@@ -179,13 +145,27 @@ const Welcome = () => {
             security & your comfort are our top{" "}
             <span className="text-green-600"> priorities </span> Nature Friendly
             and your <span className="text-purple-800"> beach </span> resort
-            welcomes you to <span className="text-green-600">heaven on earth.</span>
+            welcomes you to <span className="text-green-600 ">heaven on earth.</span>
           </p>
+
+          
           <Link href={"/overview"}>
-            <button className="mt-3 px-6 py-4 text-lg bg-gradient-to-r from-purple-800 to-green-600 hover:bg-primary text-white font-semibold rounded-md transition duration-300">
+            <button className="wow animate__fadeInLeft md:z-10 flex mt-5 px-3 py-3 text-lg bg-gradient-to-r from-purple-800 to-green-600 hover:bg-primary text-white font-semibold rounded-md transition duration-300"
+            data-wow-duration="3s">
               Explore Resort
             </button>
+          
           </Link>
+  <div className="wow animate__fadeInRight" data-wow-duration="3s">
+  <Image 
+    src="/darbanimages/one_line_beach.webp"
+    className="mx-auto mt-10 md:mx-52 md:-mt-20"
+    width={350}
+    height={350}
+    alt="Beach" 
+  />
+</div>
+
         </div>
 
         {/* Image Section */}
@@ -197,7 +177,7 @@ const Welcome = () => {
             height={500}
             alt="Darban Resort Hero Image"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-50"></div>
+
         </div>
       </div>
     </>

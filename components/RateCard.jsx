@@ -2,7 +2,7 @@ import React from "react";
 
 const RateCard = ({ room }) => {
   return (
-    <div className="p-5 my-5  bg-blue-50">
+    <div className="p-5 my-5 bg-gradient-to-b from-purple-100 to-green-100">
       <p className="lowercase">TAX APPLICABLE ON THE RATE CARD</p> <br />
       <p>The above Packages is Valid till {room?.validTill}</p>
       <br />

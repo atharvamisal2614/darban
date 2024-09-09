@@ -293,7 +293,8 @@ const Gallery = () => {
       )}
 
       <div className="flex flex-col max-w-6xl m-auto py-20 text-center">
-        <h2 className=" wow animate__backInUp text-9xl font-bold mb-10 font-learningCurve bg-gradient-to-r from-purple-900 to-green-300 inline-block text-transparent bg-clip-text" data-wow-duration="2s">Our Gallery</h2>
+        <h2 className=" wow animate__backInUp text-9xl font-bold mb-10 font-lifeSugar bg-gradient-to-r from-purple-900 to-green-300 inline-block text-transparent bg-clip-text" data-wow-duration="2s">
+        Our Gallery</h2>
        
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div data-aos="flip-up">
