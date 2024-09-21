@@ -75,16 +75,7 @@ import React,{useEffect} from "react";
 const BluOsis = () => {
 
 
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const WOW = require("wowjs");
-      const wow = new WOW.WOW({
-        live: false,
-        resetAnimation: true,
-      });
-      wow.init();
-    }
-  }, []);
+
   return (
     <>
       <div className="bg-[url('/darbanimages/darban-gallery-3.jpeg')] h-[70vh] bg-fixed w-full flex justify-center items-center bg-center bg-cover">
@@ -111,7 +102,7 @@ const BluOsis = () => {
           />
         </div>
         <div data-aos="zoom-in-right" className="md:w-3/5 p-5 md:px-10">
-          <p className="wow animate__slideInRight" data-wow-duration="3s">
+          <p className="wow animate__slideInRight">
             At Darban Resort, the lake view is undoubtedly a major highlight, and
             guests can enjoy this mesmerizing view from the comfort of their own
             rooms or while relaxing by the infinity pool. The pool appears to
@@ -120,7 +111,7 @@ const BluOsis = () => {
             enjoying this stunning view.
           </p>
           <br />
-          <p className="wow animate__slideInLeft" data-wow-duration="3s">
+          <p className="wow animate__slideInLeft">
             As the sun sets over the lake, the view becomes even more
             spectacular, with the vibrant colors of the sunset reflected on the
             waters surface, creating a stunning natural canvas that is hard to
@@ -129,7 +120,7 @@ const BluOsis = () => {
             the pool deck, surrounded by the serene beauty of the lake.
           </p>
           <br />
-          <p className="wow animate__slideInUp" data-wow-duration="5s">
+          <p className="wow animate__slideInUp">
             Overall, the view of the lake and the huge swimming pool gives a
             unforgettable oasis experience that truly captures the essence of a
             tranquil and serene getaway.

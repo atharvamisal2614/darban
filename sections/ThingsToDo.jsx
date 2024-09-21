@@ -207,11 +207,11 @@ const ThingsToDo = () => {
   return (
     <div
       id="things-to-do"
-      className="flex flex-col items-center max-w-full mx-auto py-20 px-4 bg-gradient-to-t from-purple-800 to-green-600 shadow-2xl rounded-lg"
+      className="flex flex-col items-center max-w-full mx-auto py-20 px-4 bg-gradient-to-t from-green-300 to-green-100 shadow-2xl rounded-lg"
     >
       <p
-        className=" font-lifeSugar wow animate__fadeInUpBig text-5xl font-semibold uppercase tracking-wider mb-4 text-gray-100 text-center"
-        data-wow-duration="3s"
+        className=" font-lifeSugar wow animate__fadeInUpBig text-5xl font-semibold uppercase tracking-wider mb-4 text-gray-900 text-center"
+        
         data-aos="fade-down"
       >
         T H I N G S<span className="p-2"></span> T O{" "}
@@ -219,14 +219,14 @@ const ThingsToDo = () => {
       </p>
       <h2
         className="font-learningCurve wow animate__fadeInDownBig text-6xl font-extrabold my-5 text-blue-800 drop-shadow-lg text-center"
-        data-wow-duration="3s"
+        
         data-aos="fade-up"
       >
         Nearby Places
       </h2>
       <p
-  className="mx-auto text-lg md:text-2xl font-lifeSugar wow animate__backInLeft px-4 md:px-10 lg:px-20 xl:px-44 mb-10 text-gray-100 leading-relaxed text-justify flex items-center justify-center"
-  data-wow-duration="2s"
+  className="mx-auto text-lg md:text-2xl font-lifeSugar wow animate__backInLeft px-4 md:px-10 lg:px-20 xl:px-44 mb-10 text-gray-900 leading-relaxed text-justify flex items-center justify-center"
+  data-="2s"
   data-aos="zoom-in"
 >
   There are numerous experiences awaiting you at Darban Resort, offering a
@@ -239,21 +239,21 @@ const ThingsToDo = () => {
 
 
       <div className=" flex flex-col md:flex-row gap-5 md:gap-10 w-full" >
-        <div className="md:w-1/3 w-full wow animate__fadeInUp" data-wow-duration="3s">
+        <div className="md:w-1/3 w-full wow animate__fadeInUp" >
           <Place
             image="/darbanimages/diveagar.jpg"
             name="Diveagar Beach"
             desc=" serene beach town along the Konkan coast, known for its pristine beaches and lush green surroundings, offering a peaceful retreat away from the hustle and bustle."
           />
         </div>
-        <div className="md:w-1/3 w-full wow animate__fadeInUp" data-wow-duration="3s" >
+        <div className="md:w-1/3 w-full wow animate__fadeInUp"  >
           <Place
             image="/darbanimages/murud_janjira.webp"
             name="Murud Janjira Fort"
             desc="An impressive sea fort located off the coast of Murud, renowned for its historical significance and strategic location, surrounded by the Arabian Sea."
           />
         </div>
-        <div className="md:w-1/3 w-full wow animate__fadeInUp" data-wow-duration="3s">
+        <div className="md:w-1/3 w-full wow animate__fadeInUp" >
           <Place
             image="/places/boating.jpg"
             name="Boating"
@@ -263,7 +263,7 @@ const ThingsToDo = () => {
       </div>
 
       <div className="flex flex-col md:flex-row gap-5 md:gap-10 mt-10 w-full">
-        <div className="md:w-1/3 w-full wow animate__fadeInUp" data-wow-duration="3s" >
+        <div className="md:w-1/3 w-full wow animate__fadeInUp"  >
           <Place
             image="/darbanimages/harihareshwar.jpg"
             name="Harihareshwar Fort"
@@ -272,14 +272,14 @@ const ThingsToDo = () => {
 "
           />
         </div>
-        <div className="md:w-1/3 w-full wow animate__fadeInUp" data-wow-duration="3s" >
+        <div className="md:w-1/3 w-full wow animate__fadeInUp"  >
           <Place
             image="/darbanimages/uttareshwar.jpeg"
             name="Uttareshwar Temple"
             desc="An ancient temple dedicated to Lord Shiva, situated in Uttreshwar with intricate carvings and serene ambiance, making it a prominent spiritual site in the region."
           />
         </div>
-        <div className="md:w-1/3 w-full wow animate__fadeInUp" data-wow-duration="3s" >
+        <div className="md:w-1/3 w-full wow animate__fadeInUp"  >
           <Place
             image="/darbanimages/phansad.jpeg"
             name="Phansad Sanctuary"
@@ -289,21 +289,21 @@ const ThingsToDo = () => {
       </div>
 
       <div className="flex flex-col md:flex-row gap-5 md:gap-10 mt-10 w-full">
-        <div className="md:w-1/3 w-full wow animate__fadeInUp" data-wow-duration="3s">
+        <div className="md:w-1/3 w-full wow animate__fadeInUp" >
           <Place
             image="/darbanimages/para_sailing.jpg"
             name="Para Sailing"
             desc="A thrilling adventure sport available along the Konkan coast, offering breathtaking aerial views of the coastline and a sense of exhilaration."
           />
         </div>
-        <div className="md:w-1/3 w-full wow animate__fadeInUp" data-wow-duration="3s" >
+        <div className="md:w-1/3 w-full wow animate__fadeInUp"  >
           <Place
             image="/darbanimages/bankot_fort.jpg"
             name="Bankot Fort"
             desc="A historical fort located near the village of Bankot, offering spectacular views of the surrounding sea and countryside, and a glimpse into the region's past."
           />
         </div>
-        <div className="md:w-1/3 w-full wow animate__fadeInUp" data-wow-duration="3s">
+        <div className="md:w-1/3 w-full wow animate__fadeInUp" >
           <Place
             image="/darbanimages/peshwa_memorial.jpg"
             name="Peshwa Memorial"

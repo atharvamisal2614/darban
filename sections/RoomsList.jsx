@@ -119,7 +119,7 @@
 //      <div className="flex flex-col md:flex-row max-w-6xl m-auto gap-5" data-aos="fade-up">
      
 //   <div className="md:w-1/2 flex flex-col mb-10">
-//     <h3 className=" mt-20 text-center px-1 py-1 text-white text-3xl font-bold mb-2 bg-gradient-to-r from-green-600 to-purple-800 w-fit m-auto rounded-md">
+//     <h3 className=" mt-20 text-center px-1 py-1 text-white text-3xl font-bold mb-2 bg-gradient-to-r bg-green-200 hover:bg-green-300 w-fit m-auto rounded-md">
 //       DELUXE ROOM
 //     </h3>
 //     <p className="mt-5 text-[18px] font-serif text-green-600 text-justify mb-4 px-4">
@@ -128,11 +128,11 @@
 //       contemporary furnishings and a <span className="text-purple-800">cozy ambiance</span>, ensuring a comfortable{" "}
 //       and enjoyable <span className="text-purple-800">stay</span>.
 //     </p>
-//     <div className="border-4 border-green-600 mt-5 bg-[url('/darbanimages/deluxe_room.jpeg')] hover:scale-105 transition-all duration-500 md:rounded-lg relative h-80 bg-center bg-cover">
+//     <div className="mt-5 bg-[url('/darbanimages/deluxe_room.jpeg')] hover:scale-105 transition-all duration-500 md:rounded-lg relative h-80 bg-center bg-cover">
 //       <div className="flex-1"></div>
 //     </div>
 //     <div className="flex flex-col items-center mt-10">
-//       <div className="flex justify-between items-center bg-gradient-to-r from-green-600 to-purple-800 text-white px-20 py-3 rounded-md font-semibold transition duration-300 hover:bg-opacity-90 w-full max-w-screen-lg">
+//       <div className="flex justify-between items-center bg-gradient-to-r bg-green-200 hover:bg-green-300 text-white px-20 py-3 rounded-md font-semibold transition duration-300 hover:bg-opacity-90 w-full max-w-screen-lg">
 //         <div className="flex items-center mx-4">
 //           <AiOutlineWifi className="text-white" size={40} />
 //         </div>
@@ -163,7 +163,7 @@
 
 
 //   <div className="md:w-1/2 flex flex-col mb-10">
-//     <h3 className="text-center px-1 py-1 text-white text-3xl font-bold mb-2 bg-gradient-to-r from-green-600 to-purple-800 w-fit m-auto rounded-md">
+//     <h3 className="text-center px-1 py-1 text-white text-3xl font-bold mb-2 bg-gradient-to-r bg-green-200 hover:bg-green-300 w-fit m-auto rounded-md">
 //       EXECUTIVE DELUXE ROOM
 //     </h3>
 //     <p className="mt-5 text-[18px] font-serif text-green-600 text-justify mb-4 px-4">
@@ -172,11 +172,11 @@
 //       <span className="text-purple-800">refined</span> interior and {" "}
 //       <span className="text-purple-800">exclusive </span>{" "} amenities for a <span className="text-purple-800">memorable </span> retreat.
 //     </p>
-//     <div className="border-4 border-green-600 mt-5 bg-[url('/darbanimages/exe_deluxe_room.jpeg')] hover:scale-105 transition-all duration-500 md:rounded-lg relative h-80 bg-center bg-cover">
+//     <div className="mt-5 bg-[url('/darbanimages/exe_deluxe_room.jpeg')] hover:scale-105 transition-all duration-500 md:rounded-lg relative h-80 bg-center bg-cover">
 //       <div className="flex-1"></div>
 //     </div>
 //     <div className="flex flex-col items-center mt-10">
-//       <div className="flex justify-between items-center bg-gradient-to-r from-green-600 to-purple-800 text-white px-20 py-3 rounded-md font-semibold transition duration-300 hover:bg-opacity-90 w-full max-w-screen-lg">
+//       <div className="flex justify-between items-center bg-gradient-to-r bg-green-200 hover:bg-green-300 text-white px-20 py-3 rounded-md font-semibold transition duration-300 hover:bg-opacity-90 w-full max-w-screen-lg">
 //         <div className="flex items-center mx-4">
 //           <AiOutlineWifi className="text-white" size={40} />
 //         </div>
@@ -212,7 +212,7 @@
 
 // <div className="mt-20 flex flex-col md:flex-row max-w-6xl m-auto gap-5 " data-aos="fade-up">
 //   <div className="md:w-1/2 flex flex-col mb-10">
-//     <h3 className="text-center px-1 py-1 text-white text-3xl font-bold mb-2 bg-gradient-to-r from-green-600 to-purple-800 w-fit m-auto rounded-md">
+//     <h3 className="text-center px-1 py-1 text-white text-3xl font-bold mb-2 bg-gradient-to-r bg-green-200 hover:bg-green-300 w-fit m-auto rounded-md">
 //       PREMIUM DELUXE ROOM
 //     </h3>
 //     <p className="mt-5 text-[18px] font-serif text-green-600 text-justify mb-4 px-4">
@@ -222,11 +222,11 @@
 //       upscale <span className="text-purple-800">decor</span> and thoughtful <span className="text-purple-800">details</span>
 //       {" "} for a heightened level of <span className="text-purple-800">comfort.</span>
 //     </p>
-//     <div className="border-4 border-green-600 mt-5 bg-[url('/darbanimages/premium_deluxe_room.jpeg')] hover:scale-105 transition-all duration-500 md:rounded-lg relative h-80 bg-center bg-cover">
+//     <div className="mt-5 bg-[url('/darbanimages/premium_deluxe_room.jpeg')] hover:scale-105 transition-all duration-500 md:rounded-lg relative h-80 bg-center bg-cover">
 //       <div className="flex-1"></div>
 //     </div>
 //     <div className="flex flex-col items-center mt-10">
-//       <div className="flex justify-between items-center bg-gradient-to-r from-green-600 to-purple-800 text-white px-20 py-3 rounded-md font-semibold transition duration-300 hover:bg-opacity-90 w-full max-w-screen-lg">
+//       <div className="flex justify-between items-center bg-gradient-to-r bg-green-200 hover:bg-green-300 text-white px-20 py-3 rounded-md font-semibold transition duration-300 hover:bg-opacity-90 w-full max-w-screen-lg">
 //         <div className="flex items-center mx-4">
 //           <AiOutlineWifi className="text-white" size={40} />
 //         </div>
@@ -257,7 +257,7 @@
 
 
 //   <div className="md:w-1/2 flex flex-col mb-10">
-//     <h3 className="text-center px-1 py-1 text-white text-3xl font-bold mb-2 bg-gradient-to-r from-green-600 to-purple-800 w-fit m-auto rounded-md">
+//     <h3 className="text-center px-1 py-1 text-white text-3xl font-bold mb-2 bg-gradient-to-r bg-green-200 hover:bg-green-300 w-fit m-auto rounded-md">
 //     PRESIDENTIAL  SUITE
 //     </h3>
 //     <p className="mt-5 text-[18px] font-serif text-green-600 text-justify mb-4 px-4">
@@ -269,11 +269,11 @@
 //       <span className="text-purple-800">retreat panoramic</span>{" "}
 //       views, a private <span className="text-purple-800">living area</span>.
 //     </p>
-//     <div className="border-4 border-green-600 mt-5 bg-[url('/darbanimages/presindential_room.jpeg')] hover:scale-105 transition-all duration-500 md:rounded-lg relative h-80 bg-center bg-cover">
+//     <div className="mt-5 bg-[url('/darbanimages/presindential_room.jpeg')] hover:scale-105 transition-all duration-500 md:rounded-lg relative h-80 bg-center bg-cover">
 //       <div className="flex-1"></div>
 //     </div>
 //     <div className="flex flex-col items-center mt-10">
-//       <div className="flex justify-between items-center bg-gradient-to-r from-green-600 to-purple-800 text-white px-20 py-3 rounded-md font-semibold transition duration-300 hover:bg-opacity-90 w-full max-w-screen-lg">
+//       <div className="flex justify-between items-center bg-gradient-to-r bg-green-200 hover:bg-green-300 text-white px-20 py-3 rounded-md font-semibold transition duration-300 hover:bg-opacity-90 w-full max-w-screen-lg">
 //         <div className="flex items-center mx-4">
 //           <AiOutlineWifi className="text-white" size={40} />
 //         </div>
@@ -307,7 +307,7 @@
 // </div> 
 
 // <div className="mt-20 md:w-1/3 m-auto flex flex-col mb-10" data-aos="fade-up">
-//     <h3 className="text-center px-1 py-1 text-white text-3xl font-bold mb-2 bg-gradient-to-r from-green-600 to-purple-800 w-fit m-auto rounded-md">
+//     <h3 className="text-center px-1 py-1 text-white text-3xl font-bold mb-2 bg-gradient-to-r bg-green-200 hover:bg-green-300 w-fit m-auto rounded-md">
 //     ROYAL SUITE ROOM
 //     </h3>
 //     <p className="mt-5 text-[18px] font-serif text-green-600 text-justify mb-4 px-4">
@@ -317,11 +317,11 @@
 // combines modern{" "}
 //      <span className="text-purple-800">amenities</span>{" "} with regal <span className="text-purple-800">charm</span> for a truly indulgent stay.
 //     </p>
-//     <div className="border-4 border-green-600 mt-5 bg-[url('/darbanimages/royal_suit_room.jpeg')] hover:scale-105 transition-all duration-500 md:rounded-lg relative h-80 bg-center bg-cover">
+//     <div className="mt-5 bg-[url('/darbanimages/royal_suit_room.jpeg')] hover:scale-105 transition-all duration-500 md:rounded-lg relative h-80 bg-center bg-cover">
 //       <div className="flex-1"></div>
 //     </div>
 //     <div className="flex flex-col items-center mt-10">
-//       <div className="flex justify-between items-center bg-gradient-to-r from-green-600 to-purple-800 text-white px-20 py-3 rounded-md font-semibold transition duration-300 hover:bg-opacity-90 w-full max-w-screen-lg">
+//       <div className="flex justify-between items-center bg-gradient-to-r bg-green-200 hover:bg-green-300 text-white px-20 py-3 rounded-md font-semibold transition duration-300 hover:bg-opacity-90 w-full max-w-screen-lg">
 //         <div className="flex items-center mx-4">
 //           <AiOutlineWifi className="text-white" size={40} />
 //         </div>
@@ -377,7 +377,7 @@ const RoomsList = () => {
     <>
       <div className="flex flex-col md:flex-row max-w-6xl m-auto gap-5" data-aos="fade-up">
         <div className="md:w-1/2 flex flex-col mb-10">
-          <h3 className="mt-20 text-center px-1 py-1 text-white text-3xl font-bold mb-2 bg-gradient-to-r from-green-600 to-purple-800 w-fit m-auto rounded-md">
+          <h3 className="mt-20 text-center px-3 py-3 text-black text-xl font-semibold  mb-2 bg-green-200 hover:bg-green-300 w-fit m-auto rounded-md">
             DELUXE ROOM
           </h3>
           <p className="mt-5 text-[18px] font-serif text-green-600 text-justify mb-4 px-4">
@@ -388,30 +388,30 @@ const RoomsList = () => {
             comfortable and enjoyable{" "}
             <span className="text-purple-800">stay</span>.
           </p>
-          <div className="border-4 border-green-600 mt-5 bg-[url('/darbanimages/deluxe_room.jpeg')] hover:scale-105 transition-all duration-500 md:rounded-lg relative h-80 bg-center bg-cover"></div>
+          <div className=" mt-5 bg-[url('/darbanimages/deluxe_room.jpeg')] hover:scale-105 transition-all duration-500 md:rounded-lg relative h-80 bg-center bg-cover"></div>
           <div className="flex flex-col items-center mt-10">
-            <div className="flex justify-center items-center bg-gradient-to-r from-green-600 to-purple-800 text-white px-5 py-3 rounded-md font-semibold transition duration-300 hover:bg-opacity-90 w-full max-w-screen-lg">
+            <div className="flex justify-center items-center text-black  px-5 py-3 rounded-md font-semibold transition duration-300 hover:bg-opacity-90 w-full max-w-screen-lg">
               <div className="flex items-center mx-2">
-                <AiOutlineWifi className="text-white" size={40} />
+                <AiOutlineWifi className="text-black" size={35} />
               </div>
               <div className="flex items-center mx-2">
-                <TbAirConditioning className="text-white" size={40} />
+                <TbAirConditioning className="text-black" size={35} />
               </div>
               <div className="flex items-center mx-2">
-                <BiBed className="text-white" size={40} />
+                <BiBed className="text-black" size={35} />
               </div>
               <div className="flex items-center mx-2">
-                <FaToilet className="text-white" size={40} />
+                <FaToilet className="text-black" size={35} />
               </div>
               <div className="flex items-center mx-2">
-                <BsTv className="text-white" size={40} />
+                <BsTv className="text-black" size={35} />
               </div>
               <div className="flex items-center mx-2">
-                <MdFreeBreakfast className="text-white" size={40} />
+                <MdFreeBreakfast className="text-black" size={35} />
               </div>
             </div>
             <Link href={"/blunest/bluwater"}>
-              <p className="text-white text-3xl rounded-3xl bg-purple-800 px-6 py-2 font-bold mt-8">
+              <p className="text-white text-xl font-bold rounded-3xl bg-purple-600 hover:bg-purple-700 px-6 py-2  mt-8">
                 Click Here
               </p>
             </Link>
@@ -419,7 +419,7 @@ const RoomsList = () => {
         </div>
 
         <div className="md:w-1/2 flex flex-col mb-10">
-          <h3 className="text-center px-1 py-1 text-white text-3xl font-bold mb-2 bg-gradient-to-r from-green-600 to-purple-800 w-fit m-auto rounded-md">
+          <h3 className="text-center px-3 py-3 text-black text-xl font-bold mb-2  bg-green-200 hover:bg-green-300 w-fit m-auto rounded-md">
             EXECUTIVE DELUXE ROOM
           </h3>
           <p className="mt-5 text-[18px] font-serif text-green-600 text-justify mb-4 px-4">
@@ -429,30 +429,30 @@ const RoomsList = () => {
             <span className="text-purple-800">exclusive </span> amenities for a{" "}
             <span className="text-purple-800">memorable</span> retreat.
           </p>
-          <div className="border-4 border-green-600 mt-5 bg-[url('/darbanimages/exe_deluxe_room.jpeg')] hover:scale-105 transition-all duration-500 md:rounded-lg relative h-80 bg-center bg-cover"></div>
+          <div className="mt-5 bg-[url('/darbanimages/exe_deluxe_room.jpeg')] hover:scale-105 transition-all duration-500 md:rounded-lg relative h-80 bg-center bg-cover"></div>
           <div className="flex flex-col items-center mt-10">
-            <div className="flex justify-center items-center bg-gradient-to-r from-green-600 to-purple-800 text-white px-5 py-3 rounded-md font-semibold transition duration-300 hover:bg-opacity-90 w-full max-w-screen-lg">
+            <div className="flex justify-center items-center text-black px-5 py-3 rounded-md font-semibold transition duration-300 hover:bg-opacity-90 w-full max-w-screen-lg">
               <div className="flex items-center mx-2">
-                <AiOutlineWifi className="text-white" size={40} />
+                <AiOutlineWifi className="text-black" size={35} />
               </div>
               <div className="flex items-center mx-2">
-                <TbAirConditioning className="text-white" size={40} />
+                <TbAirConditioning className="text-black" size={35} />
               </div>
               <div className="flex items-center mx-2">
-                <BiBed className="text-white" size={40} />
+                <BiBed className="text-black" size={35} />
               </div>
               <div className="flex items-center mx-2">
-                <FaToilet className="text-white" size={40} />
+                <FaToilet className="text-black" size={35} />
               </div>
               <div className="flex items-center mx-2">
-                <BsTv className="text-white" size={40} />
+                <BsTv className="text-black" size={35} />
               </div>
               <div className="flex items-center mx-2">
-                <MdFreeBreakfast className="text-white" size={40} />
+                <MdFreeBreakfast className="text-black" size={35} />
               </div>
             </div>
             <Link href={"/blunest/blugarden"}>
-              <p className="text-white text-3xl rounded-3xl bg-purple-800 px-6 py-2 font-bold mt-8">
+              <p className="text-white text-xl rounded-3xl bg-purple-600 hover:bg-purple-700 px-6 py-2 font-bold mt-8">
                 Click Here
               </p>
             </Link>
@@ -462,7 +462,7 @@ const RoomsList = () => {
 
       <div className="mt-20 flex flex-col md:flex-row max-w-6xl m-auto gap-5 " data-aos="fade-up">
         <div className="md:w-1/2 flex flex-col mb-10">
-          <h3 className="text-center px-1 py-1 text-white text-3xl font-bold mb-2 bg-gradient-to-r from-green-600 to-purple-800 w-fit m-auto rounded-md">
+          <h3 className="text-center px-3 py-3 text-black text-xl font-bold mb-2 bg-green-200 hover:bg-green-300 w-fit m-auto rounded-md">
             PREMIUM DELUXE ROOM
           </h3>
           <p className="mt-5 text-[18px] font-serif text-green-600 text-justify mb-4 px-4">
@@ -473,30 +473,30 @@ const RoomsList = () => {
             <span className="text-purple-800">details</span> for a heightened level of{" "}
             <span className="text-purple-800">comfort</span>.
           </p>
-          <div className="border-4 border-green-600 mt-5 bg-[url('/darbanimages/premium_deluxe_room.jpeg')] hover:scale-105 transition-all duration-500 md:rounded-lg relative h-80 bg-center bg-cover"></div>
+          <div className="mt-5 bg-[url('/darbanimages/premium_deluxe_room.jpeg')] hover:scale-105 transition-all duration-500 md:rounded-lg relative h-80 bg-center bg-cover"></div>
           <div className="flex flex-col items-center mt-10">
-            <div className="flex justify-center items-center bg-gradient-to-r from-green-600 to-purple-800 text-white px-5 py-3 rounded-md font-semibold transition duration-300 hover:bg-opacity-90 w-full max-w-screen-lg">
+            <div className="flex justify-center items-center px-5 py-3 rounded-md font-semibold transition duration-300 hover:bg-opacity-90 w-full max-w-screen-lg">
               <div className="flex items-center mx-2">
-                <AiOutlineWifi className="text-white" size={40} />
+                <AiOutlineWifi className="text-black" size={35} />
               </div>
               <div className="flex items-center mx-2">
-                <TbAirConditioning className="text-white" size={40} />
+                <TbAirConditioning className="text-black" size={35} />
               </div>
               <div className="flex items-center mx-2">
-                <BiBed className="text-white" size={40} />
+                <BiBed className="text-black" size={35} />
               </div>
               <div className="flex items-center mx-2">
-                <FaToilet className="text-white" size={40} />
+                <FaToilet className="text-black" size={35} />
               </div>
               <div className="flex items-center mx-2">
-                <BsTv className="text-white" size={40} />
+                <BsTv className="text-black" size={35} />
               </div>
               <div className="flex items-center mx-2">
-                <MdFreeBreakfast className="text-white" size={40} />
+                <MdFreeBreakfast className="text-black" size={35} />
               </div>
             </div>
             <Link href={"/blunest/blusky"}>
-              <p className="text-white text-3xl rounded-3xl bg-purple-800 px-6 py-2 font-bold mt-8">
+              <p className="text-white text-xl rounded-3xl bg-purple-600 hover:bg-purple-700 px-6 py-2 font-bold mt-8">
                 Click Here
               </p>
             </Link>
@@ -504,7 +504,7 @@ const RoomsList = () => {
         </div>
 
         <div className="md:w-1/2 flex flex-col mb-10">
-          <h3 className="text-center px-1 py-1 text-white text-3xl font-bold mb-2 bg-gradient-to-r from-green-600 to-purple-800 w-fit m-auto rounded-md">
+          <h3 className="text-center px-3 py-3 text-black text-xl font-bold mb-2 bg-green-200 hover:bg-green-300 w-fit m-auto rounded-md">
             FAMILY DELUXE ROOM
           </h3>
           <p className="mt-5 text-[18px] font-serif text-green-600 text-justify mb-4 px-4">
@@ -514,30 +514,30 @@ const RoomsList = () => {
             <span className="text-purple-800">kid-friendly</span> amenities for a{" "}
             <span className="text-purple-800">relaxing</span> getaway.
           </p>
-          <div className="border-4 border-green-600 mt-5 bg-[url('/darbanimages/presindential_room.jpeg')] hover:scale-105 transition-all duration-500 md:rounded-lg relative h-80 bg-center bg-cover"></div>
+          <div className="mt-5 bg-[url('/darbanimages/presindential_room.jpeg')] hover:scale-105 transition-all duration-500 md:rounded-lg relative h-80 bg-center bg-cover"></div>
           <div className="flex flex-col items-center mt-10">
-            <div className="flex justify-center items-center bg-gradient-to-r from-green-600 to-purple-800 text-white px-5 py-3 rounded-md font-semibold transition duration-300 hover:bg-opacity-90 w-full max-w-screen-lg">
+            <div className="flex justify-center items-center  text-black px-5 py-3 rounded-md font-semibold transition duration-300 hover:bg-opacity-90 w-full max-w-screen-lg">
               <div className="flex items-center mx-2">
-                <AiOutlineWifi className="text-white" size={40} />
+                <AiOutlineWifi className="text-black" size={35} />
               </div>
               <div className="flex items-center mx-2">
-                <TbAirConditioning className="text-white" size={40} />
+                <TbAirConditioning className="text-black" size={35} />
               </div>
               <div className="flex items-center mx-2">
-                <BiBed className="text-white" size={40} />
+                <BiBed className="text-black" size={35} />
               </div>
               <div className="flex items-center mx-2">
-                <FaToilet className="text-white" size={40} />
+                <FaToilet className="text-black" size={35} />
               </div>
               <div className="flex items-center mx-2">
-                <BsTv className="text-white" size={40} />
+                <BsTv className="text-black" size={35} />
               </div>
               <div className="flex items-center mx-2">
-                <MdFreeBreakfast className="text-white" size={40} />
+                <MdFreeBreakfast className="text-black" size={35} />
               </div>
             </div>
             <Link href={"/blunest/blugarden"}>
-              <p className="text-white text-3xl rounded-3xl bg-purple-800 px-6 py-2 font-bold mt-8">
+              <p className="text-white text-xl rounded-3xl bg-purple-600 hover:bg-purple-700 px-6 py-2 font-bold mt-8">
                 Click Here
               </p>
             </Link>
@@ -548,7 +548,7 @@ const RoomsList = () => {
       </div>
 
       <div className="mt-20 md:w-1/3 m-auto flex flex-col mb-10" data-aos="fade-up">
-     <h3 className="text-center px-1 py-1 text-white text-3xl font-bold mb-2 bg-gradient-to-r from-green-600 to-purple-800 w-fit m-auto rounded-md">
+     <h3 className="text-center px-3 py-3 text-black text-xl font-bold mb-2 bg-green-200 hover:bg-green-300 w-fit m-auto rounded-md">
      ROYAL SUITE ROOM
      </h3>
      <p className="mt-5 text-[18px] font-serif text-green-600 text-justify mb-4 px-4">
@@ -558,32 +558,32 @@ const RoomsList = () => {
  combines modern{" "}
       <span className="text-purple-800">amenities</span>{" "} with regal <span className="text-purple-800">charm</span> for a truly indulgent stay.
      </p>
-     <div className="border-4 border-green-600 mt-5 bg-[url('/darbanimages/royal_suit_room.jpeg')] hover:scale-105 transition-all duration-500 md:rounded-lg relative h-80 bg-center bg-cover">
+     <div className="mt-5 bg-[url('/darbanimages/royal_suit_room.jpeg')] hover:scale-105 transition-all duration-500 md:rounded-lg relative h-80 bg-center bg-cover">
        <div className="flex-1"></div>
      </div>
      <div className="flex flex-col items-center mt-10">
-       <div className="flex justify-between items-center bg-gradient-to-r from-green-600 to-purple-800 text-white px-20 py-3 rounded-md font-semibold transition duration-300 hover:bg-opacity-90 w-full max-w-screen-lg">
+       <div className="flex justify-between items-center  text-black px-20 py-3 rounded-md font-semibold transition duration-300 hover:bg-opacity-90 w-full max-w-screen-lg">
          <div className="flex items-center mx-4">
-           <AiOutlineWifi className="text-white" size={40} />
+           <AiOutlineWifi className="text-black" size={35} />
          </div>
          <div className="flex items-center mx-4">
-           <TbAirConditioning className="text-white" size={40} />
+           <TbAirConditioning className="text-black" size={35} />
          </div>
          <div className="flex items-center mx-4">
-           <BiBed className="text-white" size={40} />
+           <BiBed className="text-black" size={35} />
          </div>
          <div className="flex items-center mx-4">
-           <FaToilet className="text-white" size={40} />
+           <FaToilet className="text-black" size={35} />
          </div>
          <div className="flex items-center mx-4">
-           <BsTv className="text-white" size={40} />
+           <BsTv className="text-black" size={35} />
          </div>
          <div className="flex items-center mx-4">
-           <MdFreeBreakfast className="text-white" size={40} />
+           <MdFreeBreakfast className="text-black" size={35} />
         </div>
        </div>
        <Link href={"/blunest/blugarden"}>
-         <p className="text-white text-3xl rounded-3xl bg-purple-800 px-6 py-2 font-bold mt-8">
+         <p className="text-white text-xl rounded-3xl bg-purple-600 hover:bg-purple-700 px-6 py-2 font-bold mt-8">
            Click Here
          </p>
        </Link>

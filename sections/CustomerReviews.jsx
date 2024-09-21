@@ -203,7 +203,7 @@ const CustomerReviews = () => {
     <div className="reviewBg py-10">
       <div id="testimonials" className="flex flex-col max-w-6xl mx-auto">
         {/* Apply wow and animate__zoomInUp to the heading */}
-        <h2 className="font-learningCurve  wow animate__zoomInUp text-7xl font-bold mb-6 text-center text-gray-100" data-wow-duration="2s">
+        <h2 className="font-learningCurve  wow animate__zoomInUp text-7xl font-bold mb-6 text-center text-gray-100">
           Customer Reviews
         </h2>
         <Slider {...settings}>

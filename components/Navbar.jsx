@@ -98,16 +98,16 @@
 //           } transition-all bg-[#9cff3a] mt-5 left-0 w-full duration-500 items-center md:flex-row flex-col gap-10 max-md:py-4 `}
 //         >
 //           <Link onClick={() => setNavbar(false)} href={"/"}>
-//             <p className="text-gray-700 hover:text-green-800">Home</p>
+//             <p className="text-gray-900 hover:text-green-800">Home</p>
 //           </Link>
 //           <Link onClick={() => setNavbar(false)} href={"/blunest"}>
-//             <p className="text-gray-700 hover:text-green-800" >Restaurant</p>
+//             <p className="text-gray-900 hover:text-green-800" >Restaurant</p>
 //           </Link>
 //           <Link onClick={() => setNavbar(false)} href={"/bludeck"}>
-//             <p className="text-gray-700 hover:text-green-800">Rooms</p>
+//             <p className="text-gray-900 hover:text-green-800">Rooms</p>
 //           </Link>
 //           <Link onClick={() => setNavbar(false)} href={"/bluoasis"}>
-//             <p className="text-gray-700 hover:text-green-800">About Us</p>
+//             <p className="text-gray-900 hover:text-green-800">About Us</p>
 //           </Link>
 //           <a href="/BluResort.pdf" download={true}>
 //             <button>Download Brochure</button>
@@ -219,16 +219,16 @@
 //           } transition-all bg-[#9cff3a] mt-5 left-0 w-full duration-500 items-center md:flex-row flex-col gap-10 max-md:py-4 `}
 //         >
 //           <Link onClick={() => setNavbar(false)} href={"/"}>
-//             <p className="text-gray-700 hover:text-blue-800">Home</p>
+//             <p className="text-gray-900 hover:text-blue-800">Home</p>
 //           </Link>
 //           <Link onClick={() => setNavbar(false)} href={"/blunest"}>
-//             <p className="text-gray-700 hover:text-blue-800">Restaurant</p>
+//             <p className="text-gray-900 hover:text-blue-800">Restaurant</p>
 //           </Link>
 //           <Link onClick={() => setNavbar(false)} href={"/bludeck"}>
-//             <p className="text-gray-700 hover:text-blue-800">Rooms</p>
+//             <p className="text-gray-900 hover:text-blue-800">Rooms</p>
 //           </Link>
 //           <Link onClick={() => setNavbar(false)} href={"/bluoasis"}>
-//             <p className="text-gray-700 hover:text-blue-800">About Us</p>
+//             <p className="text-gray-900 hover:text-blue-800">About Us</p>
 //           </Link>
 //           <a href="/BluResort.pdf" download={true}>
 //             <button className="bg-white text-gray-800 py-2 px-4 rounded-md shadow-md hover:bg-gradient-to-r from-blue-400 to-green-400 transition-all duration-300 ease-in-out">
@@ -278,7 +278,7 @@
 //             <div className="flex flex-col text-right justify-center gap-3 h-full">
 //               <div className="flex justify-end gap-5">
 //                 <Link href={"/malshej"}>
-//                   <p className="text-gray-700 hover:bg-gradient-to-r from-green-600 to-purple-800 hover:p-2 hover:rounded-lg hover:text-white transition-all duration-700 ease-in-out">
+//                   <p className="text-gray-900 hover:cursor-pointer transition-all duration-700 ease-in-out">
 //                     Nearby Places
 //                   </p>
 //                 </Link>
@@ -286,7 +286,7 @@
 
 //               <div className="flex gap-5 justify-end">
 //                 <Link href={"/careers"}>
-//                   <p className="text-gray-700 hover:bg-green-600 hover:p-3 hover:rounded-lg hover:text-white hover:shadow-[0_0_10px_4px_rgba(50,205,50,0.5)] transition-all duration-700 ease-in-out">
+//                   <p className="text-gray-900 hover:bg-green-600 hover:p-3 hover:rounded-lg hover:text-white hover:shadow-[0_0_10px_4px_rgba(50,205,50,0.5)] transition-all duration-700 ease-in-out">
 //                   Careers</p>
 //                 </Link>
 //               </div>
@@ -305,17 +305,17 @@
 //             <div className="flex flex-col h-full justify-center gap-3">
 //               <div className="flex gap-5">
 //                 <Link href={"/malshej"}>
-//                   <p className="text-gray-700 hover:bg-green-600 hover:p-3 hover:rounded-lg hover:text-white hover:shadow-[0_0_10px_4px_rgba(50,205,50,0.5)] transition-all duration-700 ease-in-out">
+//                   <p className="text-gray-900 hover:bg-green-600 hover:p-3 hover:rounded-lg hover:text-white hover:shadow-[0_0_10px_4px_rgba(50,205,50,0.5)] transition-all duration-700 ease-in-out">
 //                   About Diveagar</p>
 //                 </Link>
 //               </div>
 //               <div className="flex gap-5 items-center">
 //                 <Link href={"/gallery"}>
-//                   <p className="text-gray-700 hover:bg-green-600 hover:p-3 hover:rounded-lg hover:text-white hover:shadow-[0_0_10px_4px_rgba(50,205,50,0.5)] transition-all duration-700 ease-in-out">
+//                   <p className="text-gray-900 hover:bg-green-600 hover:p-3 hover:rounded-lg hover:text-white hover:shadow-[0_0_10px_4px_rgba(50,205,50,0.5)] transition-all duration-700 ease-in-out">
 //                   Photo Gallery</p>
 //                 </Link>
 //                 <Link href={"/contact"}>
-//                   <p className="text-gray-700 hover:bg-green-600 hover:p-3 hover:rounded-lg hover:text-white hover:shadow-[0_0_10px_4px_rgba(50,205,50,0.5)] transition-all duration-700 ease-in-out">
+//                   <p className="text-gray-900 hover:bg-green-600 hover:p-3 hover:rounded-lg hover:text-white hover:shadow-[0_0_10px_4px_rgba(50,205,50,0.5)] transition-all duration-700 ease-in-out">
 //                   Contact Us</p>
 //                 </Link>
 //                 <a href="https://www.instagram.com/darban_resort_/">
@@ -348,19 +348,19 @@
 //           } transition-all bg-[#9cff3a] mt-5 left-0 w-full duration-500 items-center md:flex-row flex-col gap-10 max-md:py-4 `}
 //         >
 //           <Link onClick={() => setNavbar(false)} href={"/"}>
-//             <p className="text-gray-700 hover:bg-green-600 hover:p-3 hover:rounded-lg hover:text-white hover:shadow-[0_0_10px_4px_rgba(50,205,50,0.5)] transition-all duration-700 ease-in-out">
+//             <p className="text-gray-900 hover:bg-green-600 hover:p-3 hover:rounded-lg hover:text-white hover:shadow-[0_0_10px_4px_rgba(50,205,50,0.5)] transition-all duration-700 ease-in-out">
 //             Home</p>
 //           </Link>
 //           <Link onClick={() => setNavbar(false)} href={"/blunest"}>
-//             <p className="text-gray-700 hover:bg-green-600 hover:p-3 hover:rounded-lg hover:text-white hover:shadow-[0_0_10px_4px_rgba(50,205,50,0.5)] transition-all duration-700 ease-in-out">
+//             <p className="text-gray-900 hover:bg-green-600 hover:p-3 hover:rounded-lg hover:text-white hover:shadow-[0_0_10px_4px_rgba(50,205,50,0.5)] transition-all duration-700 ease-in-out">
 //             Restaurant</p>
 //           </Link>
 //           <Link onClick={() => setNavbar(false)} href={"/bludeck"}>
-//             <p className="text-gray-700 hover:bg-green-600 hover:p-3 hover:rounded-lg hover:text-white hover:shadow-[0_0_10px_4px_rgba(50,205,50,0.5)] transition-all duration-700 ease-in-out">
+//             <p className="text-gray-900 hover:bg-green-600 hover:p-3 hover:rounded-lg hover:text-white hover:shadow-[0_0_10px_4px_rgba(50,205,50,0.5)] transition-all duration-700 ease-in-out">
 //             Rooms</p>
 //           </Link>
 //           <Link onClick={() => setNavbar(false)} href={"/bluoasis"}>
-//             <p className="text-gray-700 hover:bg-green-600 hover:p-3 hover:rounded-lg hover:text-white hover:shadow-[0_0_10px_4px_rgba(50,205,50,0.5)] transition-all duration-700 ease-in-out">
+//             <p className="text-gray-900 hover:bg-green-600 hover:p-3 hover:rounded-lg hover:text-white hover:shadow-[0_0_10px_4px_rgba(50,205,50,0.5)] transition-all duration-700 ease-in-out">
 //             About Us</p>
 //           </Link>
 //           <a href="/BluResort.pdf" download={true}>
@@ -402,16 +402,7 @@ const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
   const path = useRouter().asPath;
 
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const WOW = require("wowjs");
-      const wow = new WOW.WOW({
-        live: false,
-        resetAnimation: true,
-      });
-      wow.init();
-    }
-  }, []);
+
 
   if (path.startsWith("/admin")) return null;
 
@@ -424,8 +415,8 @@ const Navbar = () => {
               <div className="flex justify-end gap-5">
                 <Link href={"/malshej"}>
                   <p
-                    className="font-Croogs text-2xl wow animate__fadeInLeftBig text-gray-700 hover:bg-gradient-to-r from-green-600 to-purple-800 hover:p-2 hover:rounded-lg hover:text-white transition-all duration-700 ease-in-out"
-                    data-wow-duration="2s"
+                    className="font-lifeSugar font-semibold text-2xl wow animate__fadeInLeftBig text-gray-900 hover:rounded-lg hover:cursor-pointer transition-all duration-700 ease-in-out"
+                    
                   >
                     Nearby Places
                   </p>
@@ -435,8 +426,8 @@ const Navbar = () => {
               <div className="flex gap-5 justify-end">
                 <Link href={"/careers"}>
                   <p
-                    className="font-Croogs text-2xl wow animate__fadeInLeftBig text-gray-700 hover:bg-gradient-to-r from-green-600 to-purple-800 hover:p-2 hover:rounded-lg hover:text-white transition-all duration-700 ease-in-out"
-                    data-wow-duration="2s"
+                    className="font-lifeSugar font-semibold text-2xl wow animate__fadeInLeftBig text-gray-900 hover:cursor-pointer transition-all duration-700 ease-in-out"
+                    
                   >
                     Careers
                   </p>
@@ -445,7 +436,7 @@ const Navbar = () => {
             </div>
           </div>
 
-          <Image className="wow animate__backInDown" data-wow-duration="2s"
+          <Image className="wow animate__backInDown" 
             src={"/darbanimages/darban-logo-og.png"}
             style={{ height: "150px" }}
             width={200}
@@ -459,8 +450,8 @@ const Navbar = () => {
               <div className="flex gap-5">
                 <Link href={"/malshej"}>
                   <p
-                    className="font-Croogs text-2xl wow animate__fadeInRightBig text-gray-700 hover:bg-gradient-to-r from-green-600 to-purple-800 hover:p-2 hover:rounded-lg hover:text-white transition-all duration-700 ease-in-out"
-                    data-wow-duration="2s"
+                    className="font-lifeSugar font-semibold text-2xl wow animate__fadeInRightBig text-gray-900 hover:cursor-pointer transition-all duration-700 ease-in-out"
+                    
                   >
                     About Diveagar
                   </p>
@@ -469,16 +460,16 @@ const Navbar = () => {
               <div className="flex gap-5 items-center">
                 <Link href={"/gallery"}>
                   <p
-                    className="font-Croogs text-2xl wow animate__fadeInRightBig text-gray-700 hover:bg-gradient-to-r from-green-600 to-purple-800 hover:p-2 hover:rounded-lg hover:text-white transition-all duration-700 ease-in-out"
-                    data-wow-duration="2s"
+                    className="font-lifeSugar font-semibold text-2xl wow animate__fadeInRightBig text-gray-900 hover:cursor-pointer transition-all duration-700 ease-in-out"
+                    
                   >
                     Photo Gallery
                   </p>
                 </Link>
                 <Link href={"/contact"}>
                   <p
-                    className="font-Croogs text-2xl wow animate__fadeInRightBig text-gray-700 hover:bg-gradient-to-r from-green-600 to-purple-800 hover:p-2 hover:rounded-lg hover:text-white transition-all duration-700 ease-in-out"
-                    data-wow-duration="2s"
+                    className="font-lifeSugar font-semibold text-2xl wow animate__fadeInRightBig text-gray-900 hover:cursor-pointer transition-all duration-700 ease-in-out"
+                    
                   >
                     Contact Us
                   </p>
@@ -514,8 +505,8 @@ const Navbar = () => {
         >
           <Link onClick={() => setNavbar(false)} href={"/"}>
             <p
-              className="font-lifeSugar text-2xl wow animate__zoomInRight text-gray-700 hover:bg-gradient-to-r from-green-600 to-purple-800 hover:p-2 hover:rounded-lg hover:text-white transition-all duration-700 ease-in-out"
-              data-wow-duration="2s"
+              className="font-lifeSugar text-2xl font-semibold wow animate__zoomInRight text-gray-900 hover:cursor-pointer transition-all duration-700 ease-in-out"
+              
             >
               Home
             </p>
@@ -523,8 +514,8 @@ const Navbar = () => {
 
           <Link onClick={() => setNavbar(false)} href={"/blunest"}>
             <p
-              className="font-lifeSugar text-2xl wow animate__zoomInRight animated text-gray-700 hover:bg-gradient-to-r from-green-600 to-purple-800 hover:p-2 hover:rounded-lg hover:text-white transition-all duration-700 ease-in-out"
-              data-wow-duration="2s"
+              className="font-lifeSugar text-2xl font-semibold wow animate__zoomInRight animated text-gray-900 hover:cursor-pointer transition-all duration-700 ease-in-out"
+              
             >
               Restaurant
             </p>
@@ -532,8 +523,8 @@ const Navbar = () => {
 
           <Link onClick={() => setNavbar(false)} href={"/bludeck"}>
             <p
-              className="font-lifeSugar text-2xl wow animate__zoomInLeft animated text-gray-700 hover:bg-gradient-to-r from-green-600 to-purple-800 hover:p-2 hover:rounded-lg hover:text-white transition-all duration-700 ease-in-out"
-              data-wow-duration="2s"
+              className="font-lifeSugar text-2xl font-semibold wow animate__zoomInLeft animated text-gray-900 hover:cursor-pointer transition-all duration-700 ease-in-out"
+              
             >
               Rooms
             </p>
@@ -541,8 +532,8 @@ const Navbar = () => {
 
           <Link onClick={() => setNavbar(false)} href={"/bluoasis"}>
             <p
-              className="font-lifeSugar text-2xl wow animate__zoomInRight animated text-gray-700 hover:bg-gradient-to-r from-green-600 to-purple-800 hover:p-2 hover:rounded-lg hover:text-white transition-all duration-700 ease-in-out"
-              data-wow-duration="2s"
+              className="font-lifeSugar text-2xl font-semibold wow animate__zoomInRight animated text-gray-900 hover:cursor-pointer transition-all duration-700 ease-in-out"
+              
             >
               About Us
             </p>
@@ -550,8 +541,8 @@ const Navbar = () => {
 
           <a href="/BluResort.pdf" download={true}>
             <button
-              className="font-Croogs text-lg wow animate__backInUp text-gray-700 bg-white hover:bg-green-800 hover:text-white hover:shadow-[0_0_10px_4px_rgba(50,205,50,0.5)] transition-all duration-700 ease-in-out"
-              data-wow-duration="2s"
+              className="font-lifeSugar font-semibold text-lg wow animate__backInUp text-gray-900 bg-white hover:bg-green-800 hover:text-white hover:shadow-[0_0_10px_4px_rgba(50,205,50,0.5)] transition-all duration-700 ease-in-out"
+              
             >
               Download Brochure
             </button>
@@ -559,8 +550,8 @@ const Navbar = () => {
 
           <Link onClick={() => setNavbar(false)} href={"/book-now"}>
             <button
-              className="font-Croogs text-lg wow animate__backInUp text-gray-700 bg-white hover:bg-green-800 hover:text-white hover:shadow-[0_0_10px_4px_rgba(50,205,50,0.5)] transition-all duration-700 ease-in-out"
-              data-wow-duration="2s"
+              className="font-lifeSugar font-semibold text-lg wow animate__backInUp text-gray-900 bg-white hover:bg-green-800 hover:text-white hover:shadow-[0_0_10px_4px_rgba(50,205,50,0.5)] transition-all duration-700 ease-in-out"
+              
             >
               Book Now
             </button>

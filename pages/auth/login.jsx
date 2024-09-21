@@ -105,8 +105,8 @@ const Login = () => {
         localStorage.setItem("token", res.data.token);
         cookies.set("authorization", res.data.token, {
           path: "/",
-          sameSite: "Strict",
-          secure: process.env.NODE_ENV === "production",
+          // sameSite: "Strict",
+          // secure: process.env.NODE_ENV === "production",
         });
 
         toast.success("Logged In Successfully");

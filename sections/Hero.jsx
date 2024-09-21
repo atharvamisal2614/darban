@@ -176,7 +176,7 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
 import AOS from "aos";
-import "aos/dist/aos.css";
+
 import "animate.css"
 
 const Hero = () => {
@@ -216,21 +216,21 @@ const Hero = () => {
           className="md:w-2/5 p-10 bg-white relative"
         >
           <p className="wow animate__fadeInUpBig text-3xl text-center font-bold font-lifeSugar tracking-widest text-gray-900" id="typewriter-heading1"
-          data-wow-duration="3s">
+          >
            
                R E S T A U R A N T </p>
                
           <h2 className=" wow animate__fadeInDown font-learningCurve my-5 text-4xl text-center " id="typewriter-heading2"
-           data-wow-duration="3s">
+           >
             
                Make your Holidays Special with our Hotel.
                
           </h2>
           <p className="wow animate__fadeInUp text-[18px] mb-4 font-serif text-gray-800" id="typewriter-paragraph1"
-          data-wow-duration="3s">
+          >
           <span className="text-green-600">Taste buds</span> create memories, and here at <span className="text-green-600">Darban</span>, you can <span className="text-purple-800"> order</span> whatever your tummy wishes. When you are in <span className="text-green-600">Konkan</span>, it's mandatory to pamper your tummy with  <span className="text-purple-800">sizzling Konkani food</span>. We serve a great variety of  <span className="text-green-600">vegetarian</span> and <span className="text-purple-800">non-vegetarian</span> coastal <span className="text-green-600">Konkani flavors</span> and <span className="text-purple-800">Maharashtrian food</span>.
 </p>
-<div className="wow animate__bounceInUp" data-wow-duration="3s">
+<div className="wow animate__bounceInUp" >
 <Image
             src="/darbanimages/one_line_rest.png"
        
@@ -251,19 +251,19 @@ const Hero = () => {
           className="md:w-2/5 p-10 bg-white text-gray-800 relative"
         >
           <p className="wow animate__fadeInUpBig text-3xl font-bold font-lifeSugar tracking-widest text-gray-800 text-center" id="typewriter-heading3"
-          data-wow-duration="3s">
+          >
             
               S P E C I A L I T I E S
                
           </p>
           <h2 className="text-center wow animate__fadeInDown my-8 font-learningCurve text-4xl" id="typewriter-heading4"
-            data-wow-duration="3s">
+            >
             
             Enjoy Exciting Activities During Your Stay
                 
           </h2>
           <p className="wow animate__fadeInUp text-[18px] font-sans mt-3 mb-4 text-gray-800" id="typewriter-paragraph2"
-          data-wow-duration="3s">
+          >
           
   There are also a great number of <span className="text-green-600">vegetarian dishes</span> as well.
    Many of these dishes tend to have <span className="text-purple-800">coconut</span> in them too, 
@@ -272,7 +272,7 @@ const Hero = () => {
     made with fresh <span className="text-purple-800">coconuts</span>, is a must-try. 
   
           </p>
-          <div className="wow animate__fadeInUp" data-wow-duration="3s">
+          <div className="wow animate__fadeInUp" >
           <Image
             src="/darbanimages/one_line_speciality.jpg"
             width={900}

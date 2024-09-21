@@ -125,11 +125,11 @@ const Services = () => {
       <div className="flex md:flex-row flex-col max-w-6xl m-auto my-20">
         {/* Text Section */}
         <div className="md:w-2/5 p-5 md:px-10" >
-          <p className="wow animate__fadeInUpBig font-Cartitra" data-wow-duration="4s">
+          <p className="wow animate__fadeInUpBig font-Cartitra" >
             A B O U T <span className="p-2"></span> U S
           </p>
-          <h2 className=" my-5 wow animate__fadeInDownBig" data-wow-duration="4s">We are here for you.</h2>
-          <p className=" wow animate__fadeInUpBig" data-wow-duration="2s">
+          <h2 className=" my-5 wow animate__fadeInDownBig" >We are here for you.</h2>
+          <p className=" wow animate__fadeInUpBig">
             Few pieces of heaven must have fallen in Kokan only to be named
             together as the Diveagar. Or mother earth have chosen a place just
             to relax along with beautiful open sky, sea, sun, shore, serenity &
@@ -140,15 +140,15 @@ const Services = () => {
           {/* Call Now Button */}
           <a
             href="tel:+917741811112"
-            className="wow animate__bounceInRight inline-flex items-center px-4 py-2 bg-gradient-to-r from-purple-800 to-green-600 text-white text-xl font-semibold rounded-md"
-            data-wow-duration="6s"
+            className="wow animate__bounceInRight inline-flex items-center px-4 py-2 bg-green-200 hover:bg-green-300 text-black text-xl font-semibold rounded-md"
+            
           >
             <FaPhoneAlt className="mr-2" /> Call Now: +91 7741811112
           </a>
         </div>
 
         {/* Image Section */}
-        <div className="wow animate__bounceInRight md:w-3/5 p-5 md:px-10" data-wow-duration="2s">
+        <div className="wow animate__bounceInRight md:w-3/5 p-5 md:px-10">
           <Image
             src={"/darbanimages/darban-logo-og.png"}
             className="h-full object-cover relative -z-10"
@@ -162,7 +162,7 @@ const Services = () => {
       {/* <div className="flex" >
       <Image
             src={"/darbanimages/darban-1_sketch.png"}
-            className="h-full object-cover relative -z-10 mx-20 wow animate__fadeInRight" data-wow-duration="3s"
+            className="h-full object-cover relative -z-10 mx-20 wow animate__fadeInRight" 
             width={700}
             height={700}
             alt="Darban Resort Logo"
@@ -171,7 +171,7 @@ const Services = () => {
 
 <Image
             src={"/darbanimages/darban-2_sketch.png"}
-            className="h-full object-cover relative -z-10 mx-20 wow animate__fadeInLeft" data-wow-duration="3s"
+            className="h-full object-cover relative -z-10 mx-20 wow animate__fadeInLeft" 
             width={700}
             height={700}
             alt="Darban Resort Logo"
@@ -182,7 +182,7 @@ const Services = () => {
   <Image
     src={"/darbanimages/darban-1_sketch.png"}
     className="h-full object-cover relative -z-10 mx-auto md:mx-20 wow animate__fadeInRight"
-    data-wow-duration="3s"
+    
     width={700}
     height={700}
     alt="Darban Resort Logo"
@@ -190,7 +190,7 @@ const Services = () => {
   <Image
     src={"/darbanimages/darban-2_sketch.png"}
     className="h-full object-cover relative -z-10 mx-auto md:mx-20 wow animate__fadeInLeft"
-    data-wow-duration="3s"
+    
     width={700}
     height={700}
     alt="Darban Resort Logo"

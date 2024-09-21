@@ -78,7 +78,7 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="bg-gradient-to-r from-purple-800 to-green-600 text-gray-50 mt-20 rounded-tl-full rounded-tr-full">
+      <footer className="bg-gradient-to-r from-purple-300 to-green-300 text-gray-900 mt-20 rounded-tl-full rounded-tr-full">
   <div className="flex flex-col md:flex-row max-md:p-5 max-md:gap-5 max-w-6xl justify-center m-auto border-green-500 py-10 text-center">
     <div className="bluresort mb-5 md:mb-0">
       <h3 className="font-lifeSugar text-4xl font-semibold">Darban Resort</h3>
@@ -92,25 +92,25 @@ const Footer = () => {
         </h6>
       </Link>
       <Link href="/reservation-cancellation">
-        <h6 className="block mb-1 cursor-pointer hover:text-gray-400 transition">
+        <h6 className="block mb-1 cursor-pointer hover:text-green-800 transition">
           Reservation And Cancellation
         </h6>
       </Link>
       <Link href="/privacy-policy">
-        <h6 className="block mb-1 cursor-pointer hover:text-gray-400 transition">
+        <h6 className="block mb-1 cursor-pointer hover:text-green-800 transition">
           Privacy Policy
         </h6>
       </Link>
     </div>
 
-    <div className="contact">
+    <div className="contact text-black">
       <h6 className="text-lg font-semibold mb-3">Contact Us</h6>
-      <p className="mb-3 text-white">
+      <p className="mb-3 text-black hover:text-green-800">
         Darban Resort <br />
         Hanuman Pakhadi, <br />
         Diveagar <br />
       </p>
-      <p className="mb-3 text-white">
+      <p className="mb-3 text-black hover:text-green-800">
         <strong>Phone No:</strong>{" "}
         <Link href="tel:7741811112" className="hover:text-gray-400 transition">
           +91 77418 11112 / +91 72640 72626
@@ -129,7 +129,7 @@ const Footer = () => {
     </div>
   </div>
 
-  <p className="text-white border-t-2 border-green-500 p-5 text-center">
+  <p className="text-black hover:text-green-800  p-5 text-center">
     © Copyright 2022 Darban Resort. All rights reserved.
   </p>
 </footer>

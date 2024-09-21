@@ -180,16 +180,7 @@ import React,{useEffect} from "react";
 const BluDeck = () => {
 
 
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const WOW = require("wowjs");
-      const wow = new WOW.WOW({
-        live: false,
-        resetAnimation: true,
-      });
-      wow.init();
-    }
-  }, []);
+
 
   return (
     <>
@@ -213,7 +204,7 @@ const BluDeck = () => {
         </div>
 
         <div data-aos="zoom-in" className="md:w-1/2 p-5 text-center h-full">
-          <p className="wow animate__fadeInUpBig  m-auto text-justify" data-wow-duration="3s">
+          <p className="wow animate__fadeInUpBig  m-auto text-justify">
           The rooms at Darban Resort are thoughtfully designed to provide guests with
           a perfect blend of comfort and style. Each room is equipped with modern
           amenities, ensuring a luxurious stay. From plush bedding to 

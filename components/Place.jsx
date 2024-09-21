@@ -128,9 +128,9 @@ const Place = ({ name, image, desc }) => {
         <div
           className="w-full h-56 flex items-center justify-center bg-black bg-opacity-5 rounded-3xl"
         >
-          <div className="text-center text-gray-200 p-4">
+          <div className="text-center text-gray-600 p-4">
             <h4 className="text-xl font-semibold mb-2">{name}</h4>
-            <p className="text-md text-white font-bold">{desc}</p>
+            <p className="text-md text-gray-800 font-bold">{desc}</p>
           </div>
         </div>
       </ReactCardFlip>

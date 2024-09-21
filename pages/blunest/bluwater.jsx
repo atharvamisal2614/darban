@@ -33,7 +33,7 @@ import { FaCar,  FaSwimmingPool, FaConciergeBell,FaUtensils } from "react-icons/
 import RateCard from "@/components/RateCard";
 
 
-const BluWater = ({ room }) => {
+const Deluxe = ({ room }) => {
   const router = useRouter();
   useEffect(() => {
     if (!router.isReady) return;
@@ -126,7 +126,7 @@ const BluWater = ({ room }) => {
   );
 };
 
-export default BluWater;
+export default Deluxe;
 
 // export async function getServerSideProps(context) {
 //   var room;
@@ -149,7 +149,7 @@ export async function getServerSideProps(context) {
     try {
         await dbConnect();
         console.log("Connecting to MongoDB...");
-        const roomData = await Room.find({ slug: "bluwater" });
+        const roomData = await Room.find({ slug: "deluxe" });
         console.log("Room Data:", roomData);
 
         if (roomData.length > 0) {

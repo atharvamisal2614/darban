@@ -48,3 +48,24 @@ const handler = async (req, res) => {
 };
 
 export default handler;
+
+
+
+
+// import { AES, enc } from "crypto-js";
+// import crypto from "crypto";
+
+// const secretKey = process.env.ADMIN_SEC; // Ensure this is securely managed
+// const password = "Darban@1234";
+
+// // Encrypt the password
+// const encryptedPassword = AES.encrypt(password, secretKey).toString();
+// console.log("Encrypted Password:", encryptedPassword);
+
+// // Hash the encrypted password
+// const hashString = (stringToHash) => {
+//   return crypto.createHash('sha256').update(stringToHash).digest('hex');
+// };
+
+// const hashedEncryptedPassword = hashString(encryptedPassword);
+// console.log("Hashed Encrypted Password:", hashedEncryptedPassword);

@@ -102,7 +102,7 @@ import "@/styles/globals.css";
 import Head from "next/head";
 import { ToastContainer } from "react-toastify";
 import AOS from "aos";
-import "aos/dist/aos.css";
+
 import "react-toastify/dist/ReactToastify.css";
 import { useEffect, useState } from "react";
 import Footer from "@/sections/Footer";
@@ -124,16 +124,7 @@ export default function App({ Component, pageProps }) {
   }, []);
 
 
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const WOW = require("wowjs");
-      const wow = new WOW.WOW({
-        live: false,
-        resetAnimation: true,
-      });
-      wow.init();
-    }
-  }, []);
+
 
   
 

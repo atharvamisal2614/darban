@@ -10,7 +10,7 @@ const overview = () => {
         <div className="flex flex-col md:flex-row ">
           <div className="md:w-1/2 p-5">
             <Image
-              src={"/images/blu-hero.jpg"}
+              src={"/darbanimages/darban-1.jpeg"}
               width={7000}
               height={700}
               alt=""
@@ -21,15 +21,15 @@ const overview = () => {
           <div className="md:w-1/2 p-5">
             
             <p>
-              Welcome to Blu Water Resort, a luxury destination nestled in the
-              breathtaking surroundings of Malshej Ghat. Our resort is the
+              Welcome to Darban Resort, a luxury destination nestled in the
+              breathtaking surroundings of Diveagar. Our resort is the
               perfect escape from the hustle and bustle of city life, offering
               guests a serene and peaceful getaway surrounded by nature and a
               stunning lake view.
             </p>
             <br />
             <p>
-              At Blu Water Resort, we take pride in providing our guests with an
+              At Darban Resort, we take pride in providing our guests with an
               unforgettable experience that combines luxurious amenities with
               the tranquility of nature. Whether youre looking for a romantic
               retreat, a family vacation, or a group getaway, our resort has
@@ -57,17 +57,17 @@ const overview = () => {
             <br />
             <p>
               If you&rsquo;re looking to explore the area, our resort is ideally
-              situated near many of Malshej Ghats top attractions. At Blu Water
+              situated near many of Diveragr Beach top attractions. At Darban
               Resort, were committed to providing our guests with an exceptional
               experience that they will cherish for a lifetime. Whether youre
-              here to relax and unwind or to explore the beauty of Malshej Ghat,
+              here to relax and unwind or to explore the beauty of Diveagar Resort,
               we look forward to welcoming you to our luxurious resort.
             </p>
           </div>
 
           <div className="md:w-1/2 p-5">
             <Image
-              src={"/images/rest.jpeg"}
+              src={"/darbanimages/darban-2.jpeg"}
               width={7000}
               height={700}
               alt=""

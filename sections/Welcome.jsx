@@ -96,23 +96,14 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import AOS from "aos";
-import "aos/dist/aos.css";
+
 import "animate.css";
 
 const Welcome = () => {
   
 
   
-    useEffect(() => {
-    if (typeof window !== "undefined") {
-      const WOW = require("wow.js");
-      const wow = new WOW({
-        live: false,
-        resetAnimation: true,
-      });
-      wow.init();
-    }
-  }, []);
+ 
 
 
     
@@ -123,19 +114,19 @@ const Welcome = () => {
       <div className="mt-44 flex md:flex-row flex-col w-full m-auto my-20 overflow-hidden bg-white">
         {/* Text Section */}
         <div data-aos="fade-right" className="md:w-2/5 p-10">
-          <p className=" wow animate__fadeInUpBig text-4xl text-center font-bold tracking-widest text-gray-900 font-lifeSugar" data-wow-duration="3s">
+          <p className=" wow animate__fadeInUpBig text-4xl text-center font-bold tracking-widest text-gray-900 font-lifeSugar">
             
                 W E L C O M E
                
           </p>
-          <h2 className="wow animate__fadeInDown text-center font-learningCurve my-5 text-5xl font-bold" data-wow-duration="3s">
+          <h2 className="wow animate__fadeInDown text-center font-learningCurve my-5 text-5xl font-bold">
            
                 Darban Resort, Diveagar
                
           </h2>
           
 
-          <p className="font-sans text-[18px] mb-4 text-gray-600 wow animate__fadeInUp" data-wow-duration="3s">
+          <p className="font-sans text-[18px] mb-4 text-gray-600 wow animate__fadeInUp">
             <span className="text-green-600">Our place </span> is known for its
             thoughtful <span className="text-green-600"> hospitality </span> that
             gives <span className="text-purple-800"> personal </span> attention to
@@ -150,13 +141,14 @@ const Welcome = () => {
 
           
           <Link href={"/overview"}>
-            <button className="wow animate__fadeInLeft md:z-10 flex mt-5 px-3 py-3 text-lg bg-gradient-to-r from-purple-800 to-green-600 hover:bg-primary text-white font-semibold rounded-md transition duration-300"
-            data-wow-duration="3s">
+            <button className="wow text-black bg-green-200 hover:bg-green-300 animate__fadeInLeft md:z-10 flex mt-5 px-3 py-3 text-lg font-semibold rounded-md transition duration-300"
+            
+          >
               Explore Resort
             </button>
           
           </Link>
-  <div className="wow animate__fadeInRight" data-wow-duration="3s">
+  <div className="wow animate__fadeInRight">
   <Image 
     src="/darbanimages/one_line_beach.webp"
     className="mx-auto mt-10 md:mx-52 md:-mt-20"
